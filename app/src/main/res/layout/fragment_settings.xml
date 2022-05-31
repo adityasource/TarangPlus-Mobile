@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    tools:context="com.otl.tarangplus.fragments.SettingsFragment">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_margin="@dimen/px_8"
+        android:orientation="vertical"
+        android:padding="@dimen/px_8">
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px_20"
+            android:paddingBottom="@dimen/px_12"
+            android:text="@string/device_settings"
+            android:textSize="@dimen/pt_16"
+            android:textStyle="bold"
+            app:fontsName="@string/font_sans_semi_bold" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/streaming"
+            style="@style/settings_frag_txt"
+            android:drawableEnd="@color/transperent"
+            android:text="@string/streaming"
+
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey"
+            android:visibility="gone" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/registered_status"
+            style="@style/settings_frag_txt"
+            android:drawableEnd="@color/transperent"
+            android:text="@string/registered_status"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                style="@style/settings_frag_txt"
+                android:drawableEnd="@color/transperent"
+                android:text="@string/notifications"
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:enabled="true"
+                android:padding="@dimen/px_2"
+                android:theme="@style/switch_color" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/clear_watch_history"
+            style="@style/settings_frag_txt_clear_watch_history"
+            android:drawableEnd="@color/transperent"
+            android:text="@string/clear_watch_history" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/px_26"
+            android:paddingBottom="@dimen/px_12"
+            android:text="@string/privacy_settings"
+            android:textSize="@dimen/pt_16"
+            android:textStyle="bold"
+            app:fontsName="@string/font_sans_semi_bold" />
+
+        <RelativeLayout
+            android:id="@+id/parental_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                style="@style/settings_frag_txt"
+                android:drawableEnd="@color/transperent"
+                android:text="@string/parental_control"
+
+                android:visibility="visible" />
+
+            <Switch
+                android:id="@+id/parental_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/px_2"
+                android:theme="@style/switch_color" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/change_pin"
+            style="@style/settings_frag_txt"
+            android:drawableEnd="@color/transperent"
+            android:text="@string/pin_change" />
+
+        <View
+            android:id="@+id/change_pin_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_1"
+            android:background="@color/light_grey" />
+    </LinearLayout>
+</RelativeLayout>

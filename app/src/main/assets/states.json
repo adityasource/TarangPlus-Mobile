@@ -1,0 +1,5011 @@
+{
+"filters": [
+{
+"title": "states",
+"order": 2,
+"states": [
+{
+"title": "Andhra Pradesh",
+"code": "ap",
+"friendly_id": "andhra-pradesh",
+"districts": [
+{
+"title": "Anantapur",
+"code": "anantapur",
+"friendly_id": "anantapur"
+},
+{
+"title": "Chittoor",
+"code": "chittoor",
+"friendly_id": "chittoor",
+"cities": [
+{
+"title": "Tirupathi",
+"code": "tirupathi",
+"friendly_id": "tirupathi"
+}
+]
+},
+{
+"title": "East Godavari",
+"code": "east-godavari",
+"friendly_id": "east-godavari",
+"cities": [
+{
+"title": "Kakinada",
+"code": "kakinada",
+"friendly_id": "kakinada"
+},
+{
+"title": "Rajamahendravaram",
+"code": "rajamahendravaram",
+"friendly_id": "rajamahendravaram"
+}
+]
+},
+{
+"title": "Guntur",
+"code": "guntur",
+"friendly_id": "guntur",
+"cities": [
+{
+"title": "Guntur",
+"code": "guntur",
+"friendly_id": "guntur-1"
+}
+]
+},
+{
+"title": "Krishna",
+"code": "krishna",
+"friendly_id": "krishna",
+"cities": [
+{
+"title": "Vijayawada",
+"code": "vijayawada",
+"friendly_id": "vijayawada"
+},
+{
+"title": "Amaravati",
+"code": "amaravati",
+"friendly_id": "amaravati"
+}
+]
+},
+{
+"title": "Kurnool",
+"code": "kurnool",
+"friendly_id": "kurnool",
+"cities": [
+{
+"title": "Kurnool",
+"code": "kurnool",
+"friendly_id": "kurnool"
+}
+]
+},
+{
+"title": "Potti Sriramulu Nellore",
+"code": "potti-sriramulu-nellore",
+"friendly_id": "potti-sriramulu-nellore",
+"cities": [
+{
+"title": "Nellore",
+"code": "nellore",
+"friendly_id": "nellore"
+}
+]
+},
+{
+"title": "Prakasam",
+"code": "prakasam",
+"friendly_id": "prakasam"
+},
+{
+"title": "Srikakulam",
+"code": "srikakulam",
+"friendly_id": "srikakulam"
+},
+{
+"title": "Visakhapatnam",
+"code": "visakhapatnam",
+"friendly_id": "visakhapatnam",
+"cities": [
+{
+"title": "Visakhapatnam",
+"code": "visakhapatnam",
+"friendly_id": "visakhapatnam"
+}
+]
+},
+{
+"title": "Vizianagaram",
+"code": "vizianagaram",
+"friendly_id": "vizianagaram"
+},
+{
+"title": "West Godavari",
+"code": "west-godavari",
+"friendly_id": "west-godavari",
+"cities": [
+{
+"title": "Eluru",
+"code": "eluru",
+"friendly_id": "eluru"
+}
+]
+},
+{
+"title": "Ysr Kadapa",
+"code": "ysr-kadapa",
+"friendly_id": "ysr-kadapa",
+"cities": [
+{
+"title": "Kadapa",
+"code": "kadapa",
+"friendly_id": "kadapa"
+}
+]
+}
+]
+},
+{
+"title": "Assam",
+"code": "assam",
+"friendly_id": "assam",
+"districts": [
+{
+"title": "Baksha",
+"code": "baksa",
+"friendly_id": "baksha"
+},
+{
+"title": "Barpeta",
+"code": "barpeta",
+"friendly_id": "barpeta"
+},
+{
+"title": "Biswanath",
+"code": "biswanath",
+"friendly_id": "biswanath"
+},
+{
+"title": "Bongaigaon",
+"code": "bongaigaon",
+"friendly_id": "bongaigaon"
+},
+{
+"title": "Cachar",
+"code": "cachar",
+"friendly_id": "cachar",
+"cities": [
+{
+"title": "Silchar",
+"code": "silchar",
+"friendly_id": "silchar"
+}
+]
+},
+{
+"title": "Charaideo",
+"code": "charaideo",
+"friendly_id": "charaideo"
+},
+{
+"title": "Chirang",
+"code": "chirang",
+"friendly_id": "chirang"
+},
+{
+"title": "Darrang",
+"code": "darrang",
+"friendly_id": "darrang"
+},
+{
+"title": "Dhemaji",
+"code": "dhemaji",
+"friendly_id": "dhemaji"
+},
+{
+"title": "Dhubri",
+"code": "dhubri",
+"friendly_id": "dhubri",
+"cities": [
+{
+"title": "Dhubri",
+"code": "dhubri",
+"friendly_id": "dhubri"
+}
+]
+},
+{
+"title": "Dibrugarh",
+"code": "dibrugarh",
+"friendly_id": "dibrugarh",
+"cities": [
+{
+"title": "Dibrugarh",
+"code": "dibrugarh",
+"friendly_id": "dibrugarh"
+}
+]
+},
+{
+"title": "Dima Hasao (North Cachar Hills)",
+"code": "dima-hasao-north-cachar-hills",
+"friendly_id": "dima-hasao-north-cachar-hills"
+},
+{
+"title": "Goalpara",
+"code": "goalpara",
+"friendly_id": "goalpara"
+},
+{
+"title": "Golaghat",
+"code": "golaghat",
+"friendly_id": "golaghat"
+},
+{
+"title": "Hailakandi",
+"code": "hailakandi",
+"friendly_id": "hailakandi"
+},
+{
+"title": "Hojai",
+"code": "hojai",
+"friendly_id": "hojai"
+},
+{
+"title": "Jorhat",
+"code": "jorhat",
+"friendly_id": "jorhat",
+"cities": [
+{
+"title": "Jorhat",
+"code": "jorhat",
+"friendly_id": "jorhat"
+}
+]
+},
+{
+"title": "Kamrup",
+"code": "kamrup",
+"friendly_id": "kamrup"
+},
+{
+"title": "Kamrup Metropolitan",
+"code": "kamrup-metropolitan",
+"friendly_id": "kamrup-metropolitan",
+"cities": [
+{
+"title": "Guwahati",
+"code": "guwahati",
+"friendly_id": "guwahati"
+}
+]
+},
+{
+"title": "Karbi Anglong",
+"code": "karbi-anglong",
+"friendly_id": "karbi-anglong"
+},
+{
+"title": "Karimganj",
+"code": "karimganj",
+"friendly_id": "karimganj"
+},
+{
+"title": "Kokrajhar",
+"code": "kokrajhar",
+"friendly_id": "kokrajhar"
+},
+{
+"title": "Lakhimpur",
+"code": "lakhimpur",
+"friendly_id": "lakhimpur"
+},
+{
+"title": "Majuli",
+"code": "majuli",
+"friendly_id": "majuli"
+},
+{
+"title": "Morigaon",
+"code": "morigaon",
+"friendly_id": "morigaon"
+},
+{
+"title": "Nagaon",
+"code": "nagaon",
+"friendly_id": "nagaon",
+"cities": [
+{
+"title": "Nagaon",
+"code": "nagaon",
+"friendly_id": "nagaon"
+}
+]
+},
+{
+"title": "Nalbari",
+"code": "nalbari",
+"friendly_id": "nalbari",
+"cities": [
+{
+"title": "Nalbari",
+"code": "nalbari",
+"friendly_id": "nalbari"
+}
+]
+},
+{
+"title": "Sivasagar",
+"code": "sivasagar",
+"friendly_id": "sivasagar",
+"cities": [
+{
+"title": "Sivasagar",
+"code": "sivasagar",
+"friendly_id": "sivasagar"
+}
+]
+},
+{
+"title": "Sonitpur",
+"code": "sonitpur",
+"friendly_id": "sonitpur",
+"cities": [
+{
+"title": "Tezpur",
+"code": "tezpur",
+"friendly_id": "tezpur"
+}
+]
+},
+{
+"title": "South Salamara Mankachar",
+"code": "south-salamara-mankachar",
+"friendly_id": "south-salamara-mankachar"
+},
+{
+"title": "Tinsukia",
+"code": "tinsukia",
+"friendly_id": "tinsukia",
+"cities": [
+{
+"title": "Tinsukia",
+"code": "tinsukia",
+"friendly_id": "tinsukia"
+}
+]
+},
+{
+"title": "Udalguri",
+"code": "udalguri",
+"friendly_id": "udalguri"
+},
+{
+"title": "West Karbi Anglong",
+"code": "west-karbi-anglong",
+"friendly_id": "west-karbi-anglong"
+}
+]
+},
+{
+"title": "Bihar",
+"code": "bh",
+"friendly_id": "bihar",
+"districts": [
+{
+"title": "Araria   ",
+"code": "araria",
+"friendly_id": "araria"
+},
+{
+"title": "Arwal ",
+"code": "arwal",
+"friendly_id": "arwal"
+},
+{
+"title": "Banka ",
+"code": "banka",
+"friendly_id": "banka"
+},
+{
+"title": "Begusarai ",
+"code": "begusarai",
+"friendly_id": "begusarai",
+"cities": [
+{
+"title": "Begusarai",
+"code": "begusarai",
+"friendly_id": "begusarai"
+}
+]
+},
+{
+"title": "Bhagalpur ",
+"code": "bhagalpur",
+"friendly_id": "bhagalpur",
+"cities": [
+{
+"title": "Bhagalpur",
+"code": "bhagalpur",
+"friendly_id": "bhagalpur"
+}
+]
+},
+{
+"title": "Bhojpur ",
+"code": "bhojpur",
+"friendly_id": "bhojpur"
+},
+{
+"title": "Bihar Aurangabad",
+"code": "aurangabad",
+"friendly_id": "bihar-aurangabad"
+},
+{
+"title": "Buxar ",
+"code": "buxar",
+"friendly_id": "buxar"
+},
+{
+"title": "Darbhanga ",
+"code": "darbhanga",
+"friendly_id": "darbhanga",
+"cities": [
+{
+"title": "Darbhanga",
+"code": "darbhanga",
+"friendly_id": "darbhanga"
+}
+]
+},
+{
+"title": "Eastchamparan",
+"code": "eastchamparan",
+"friendly_id": "e-champaran"
+},
+{
+"title": "Gaya ",
+"code": "gaya",
+"friendly_id": "gaya",
+"cities": [
+{
+"title": "Gaya",
+"code": "gaya",
+"friendly_id": "gaya"
+}
+]
+},
+{
+"title": "Gopalganj ",
+"code": "gopalganj",
+"friendly_id": "gopalganj"
+},
+{
+"title": "Jamui ",
+"code": "jamui",
+"friendly_id": "jamui"
+},
+{
+"title": "Jehanabad ",
+"code": "jehanabad",
+"friendly_id": "jehanabad"
+},
+{
+"title": "Kaimur ",
+"code": "kaimur",
+"friendly_id": "kaimur"
+},
+{
+"title": "Katihar ",
+"code": "katihar",
+"friendly_id": "katihar",
+"cities": [
+{
+"title": "Katihar",
+"code": "katihar",
+"friendly_id": "katihar"
+}
+]
+},
+{
+"title": "Khagaria ",
+"code": "khagaria",
+"friendly_id": "khagaria"
+},
+{
+"title": "Kishanganj ",
+"code": "kishanganj",
+"friendly_id": "kishanganj"
+},
+{
+"title": "Lakhisarai ",
+"code": "lakhisarai",
+"friendly_id": "lakhisarai"
+},
+{
+"title": "Madhepura",
+"code": "madhepura",
+"friendly_id": "madhepura"
+},
+{
+"title": "Madhubani",
+"code": "madhubani",
+"friendly_id": "madhubani",
+"cities": [
+{
+"title": "Madhubani",
+"code": null,
+"friendly_id": "madhubani"
+}
+]
+},
+{
+"title": "Munger",
+"code": "munger",
+"friendly_id": "munger"
+},
+{
+"title": "Muzaffarpur",
+"code": "muzaffarpur",
+"friendly_id": "muzaffarpur",
+"cities": [
+{
+"title": "Muzaffarpur",
+"code": "muzaffarpur",
+"friendly_id": "muzaffarpur"
+}
+]
+},
+{
+"title": "Nalanda",
+"code": "nalanda",
+"friendly_id": "nalanda",
+"cities": [
+{
+"title": "Nalanda",
+"code": null,
+"friendly_id": "nalanda"
+}
+]
+},
+{
+"title": "Nawada",
+"code": "nawada",
+"friendly_id": "nawada"
+},
+{
+"title": "Patna",
+"code": "patna",
+"friendly_id": "patna",
+"cities": [
+{
+"title": "Patna",
+"code": "patna",
+"friendly_id": "patna"
+}
+]
+},
+{
+"title": "Purnea",
+"code": "purnea",
+"friendly_id": "purnea"
+},
+{
+"title": "Rohtas",
+"code": "rohtas",
+"friendly_id": "rohtas"
+},
+{
+"title": "Saharsa",
+"code": "saharsa",
+"friendly_id": "saharsa"
+},
+{
+"title": "Samastipur",
+"code": "samastipur",
+"friendly_id": "samastipur"
+},
+{
+"title": "Saran",
+"code": "saran",
+"friendly_id": "saran",
+"cities": [
+{
+"title": "Chapra",
+"code": "chapra",
+"friendly_id": "chapra"
+}
+]
+},
+{
+"title": "Sheohar",
+"code": "sheohar",
+"friendly_id": "sheohar"
+},
+{
+"title": "Shiekhpura",
+"code": "shiekhpura",
+"friendly_id": "shiekhpura"
+},
+{
+"title": "Sitamarhi",
+"code": "sitamarhi",
+"friendly_id": "sitamarhi"
+},
+{
+"title": "Siwan",
+"code": "siwan",
+"friendly_id": "siwan"
+},
+{
+"title": "Supaul",
+"code": "supaul",
+"friendly_id": "supaul"
+},
+{
+"title": "Vaishali",
+"code": "vaishali",
+"friendly_id": "vaishali"
+},
+{
+"title": "West Champaran",
+"code": "west-champaran",
+"friendly_id": "w-champaran"
+}
+]
+},
+{
+"title": "Chhattisgarh",
+"code": "ct",
+"friendly_id": "chhattisgarh",
+"districts": [
+{
+"title": "Balarampur ",
+"code": "balarampur",
+"friendly_id": "balarampur"
+},
+{
+"title": "Balod",
+"code": "balod",
+"friendly_id": "balod"
+},
+{
+"title": "Baloda Bazar ",
+"code": "baloda-bazar",
+"friendly_id": "baloda-bazar"
+},
+{
+"title": "Bastar ",
+"code": "bastar",
+"friendly_id": "bastar",
+"cities": [
+{
+"title": "Jagdalpur",
+"code": "jagdalpur",
+"friendly_id": "jagdalpur"
+}
+]
+},
+{
+"title": "Bemetara",
+"code": "bemetara",
+"friendly_id": "bemetara"
+},
+{
+"title": "Bijapur ",
+"code": "bijapur",
+"friendly_id": "bijapur"
+},
+{
+"title": "Bilaspur",
+"code": "bilaspur",
+"friendly_id": "bilaspur",
+"cities": [
+{
+"title": "Bilaspur",
+"code": "bilaspur",
+"friendly_id": "bilaspur"
+}
+]
+},
+{
+"title": "Dantewada",
+"code": "dantewada",
+"friendly_id": "dantewada"
+},
+{
+"title": "Dhamtari ",
+"code": "dhamtari",
+"friendly_id": "dhamtari",
+"cities": [
+{
+"title": "Dhamtari",
+"code": "dhamtari",
+"friendly_id": "dhamtari"
+}
+]
+},
+{
+"title": "Durg",
+"code": "durg",
+"friendly_id": "durg",
+"cities": [
+{
+"title": "Durg Bhilai",
+"code": "durg-bhilai",
+"friendly_id": "durg-bhilai"
+}
+]
+},
+{
+"title": "Gariaband",
+"code": "gariaband",
+"friendly_id": "gariaband"
+},
+{
+"title": "Janjgir Champa",
+"code": "janjgir-champa",
+"friendly_id": "janjgir-champa"
+},
+{
+"title": "Jashpur",
+"code": "jashpur",
+"friendly_id": "jashpur"
+},
+{
+"title": "Kabirdham ",
+"code": "kabirdham",
+"friendly_id": "kabirdham",
+"cities": [
+{
+"title": "Kawardha",
+"code": "kawardha",
+"friendly_id": "kawardha"
+}
+]
+},
+{
+"title": "Kanker",
+"code": "kanker",
+"friendly_id": "kanker"
+},
+{
+"title": "Kondagaon",
+"code": "kondagaon",
+"friendly_id": "kondagaon"
+},
+{
+"title": "Korba",
+"code": "korba",
+"friendly_id": "korba",
+"cities": [
+{
+"title": "Korba",
+"code": "korba",
+"friendly_id": "korba"
+}
+]
+},
+{
+"title": "Koriya",
+"code": "koriya",
+"friendly_id": "koriya"
+},
+{
+"title": "Mahasamund ",
+"code": "mahasamund",
+"friendly_id": "mahasamund",
+"cities": [
+{
+"title": "Mahasamund",
+"code": "mahasamund",
+"friendly_id": "mahasamund"
+}
+]
+},
+{
+"title": "Mungeli ",
+"code": "mungeli",
+"friendly_id": "mungeli"
+},
+{
+"title": "Narayanpur",
+"code": "narayanpur",
+"friendly_id": "narayanpur"
+},
+{
+"title": "Raigarh ",
+"code": "raigarh",
+"friendly_id": "raigarh",
+"cities": [
+{
+"title": "Raigarh",
+"code": "raigarh",
+"friendly_id": "raigarh"
+}
+]
+},
+{
+"title": "Raipur ",
+"code": "raipur",
+"friendly_id": "raipur",
+"cities": [
+{
+"title": "Raipur",
+"code": "raipur",
+"friendly_id": "raipur"
+}
+]
+},
+{
+"title": "Rajnandgaon",
+"code": "rajnandgaon",
+"friendly_id": "rajnandgaon"
+},
+{
+"title": "Sarguja",
+"code": "sarguja",
+"friendly_id": "sarguja",
+"cities": [
+{
+"title": "Ambikapur",
+"code": "ambikapur",
+"friendly_id": "ambikapur"
+}
+]
+},
+{
+"title": "Sukma",
+"code": "sukma",
+"friendly_id": "sukma"
+},
+{
+"title": "Surajpur",
+"code": "surajpur",
+"friendly_id": "surajpur"
+}
+]
+},
+{
+"title": "Delhi",
+"code": "dl",
+"friendly_id": "delhi",
+"districts": [
+{
+"title": "Central Delhi",
+"code": "central-delhi",
+"friendly_id": "central-delhi"
+},
+{
+"title": "East Delhi",
+"code": "east-delhi",
+"friendly_id": "east-delhi",
+"cities": [
+{
+"title": "Delhi",
+"code": "delhi",
+"friendly_id": "delhi"
+}
+]
+},
+{
+"title": "New Delhi",
+"code": "new-delhi",
+"friendly_id": "new-delhi"
+},
+{
+"title": "North Delhi",
+"code": "north-delhi",
+"friendly_id": "north-delhi"
+},
+{
+"title": "North East Delhi",
+"code": "north-east-delhi",
+"friendly_id": "north-east-delhi",
+"cities": [
+{
+"title": "Noida",
+"code": "noida",
+"friendly_id": "noida"
+},
+{
+"title": "Faridabad",
+"code": "faridabad",
+"friendly_id": "faridabad"
+}
+]
+},
+{
+"title": "North West Delhi",
+"code": "north-west-delhi",
+"friendly_id": "north-west-delhi"
+},
+{
+"title": "Shahdara",
+"code": "shahdara",
+"friendly_id": "shahdara"
+},
+{
+"title": "South Delhi",
+"code": "south-delhi",
+"friendly_id": "south-delhi"
+},
+{
+"title": "South East Delhi",
+"code": "south-east-delhi",
+"friendly_id": "south-east-delhi"
+},
+{
+"title": "South West Delhi",
+"code": "south-west-delhi",
+"friendly_id": "south-west-delhi",
+"cities": [
+{
+"title": "Gurugram",
+"code": "gurugram",
+"friendly_id": "gurugram"
+},
+{
+"title": "Gaziabad",
+"code": "gaziabad",
+"friendly_id": "gaziabad"
+}
+]
+},
+{
+"title": "West Delhi",
+"code": "west-delhi",
+"friendly_id": "west-delhi"
+}
+]
+},
+{
+"title": "Gujarat",
+"code": "gj",
+"friendly_id": "gujarat",
+"districts": [
+{
+"title": "Ahmedabad ",
+"code": "ahmedabad",
+"friendly_id": "ahmedabad",
+"cities": [
+{
+"title": "Ahmedabad",
+"code": "ahmedabad",
+"friendly_id": "ahmedabad"
+}
+]
+},
+{
+"title": "Amreli",
+"code": "amreli",
+"friendly_id": "amreli"
+},
+{
+"title": "Anand",
+"code": "anand",
+"friendly_id": "anand"
+},
+{
+"title": "Aravalli",
+"code": "aravalli",
+"friendly_id": "aravalli"
+},
+{
+"title": "Banaskantha",
+"code": "banaskantha",
+"friendly_id": "banaskantha"
+},
+{
+"title": "Bharuch ",
+"code": "bharuch",
+"friendly_id": "bharuch"
+},
+{
+"title": "Bhavnagar ",
+"code": "bhavnagar",
+"friendly_id": "bhavnagar",
+"cities": [
+{
+"title": "Bhavnagar",
+"code": "bhavnagar",
+"friendly_id": "bhavnagar"
+}
+]
+},
+{
+"title": "Botad",
+"code": "botad",
+"friendly_id": "botad"
+},
+{
+"title": "Chhota Udepur",
+"code": "chhota-udepur",
+"friendly_id": "chhota-udepur"
+},
+{
+"title": "Dadra",
+"code": "dadra",
+"friendly_id": "dadra",
+"cities": [
+{
+"title": "Silvasa",
+"code": "silvasa",
+"friendly_id": "silvasa"
+}
+]
+},
+{
+"title": "Dahod",
+"code": "dahod",
+"friendly_id": "dahod"
+},
+{
+"title": "Daman",
+"code": "daman",
+"friendly_id": "daman"
+},
+{
+"title": "Dang",
+"code": "dang",
+"friendly_id": "dang"
+},
+{
+"title": "Devbhoomi Dwarka",
+"code": "devbhoomi-dwarka",
+"friendly_id": "devbhoomi-dwarka"
+},
+{
+"title": "Diu",
+"code": "diu",
+"friendly_id": "diu",
+"cities": [
+{
+"title": "Diu",
+"code": "diu",
+"friendly_id": "diu"
+},
+{
+"title": "Daman",
+"code": "daman",
+"friendly_id": "daman"
+}
+]
+},
+{
+"title": "Gandhinagar",
+"code": "gandhinagar",
+"friendly_id": "gandhinagar",
+"cities": [
+{
+"title": "Gandhinagar",
+"code": "gandhinagar",
+"friendly_id": "gandhinagar"
+}
+]
+},
+{
+"title": "Gir Somnath",
+"code": "gir-somnath",
+"friendly_id": "gir-somnath"
+},
+{
+"title": "Jamnagar",
+"code": "jamnagar",
+"friendly_id": "jamnagar",
+"cities": [
+{
+"title": "Jamnagar",
+"code": "jamnagar",
+"friendly_id": "jamnagar"
+}
+]
+},
+{
+"title": "Junagadh",
+"code": "junagadh",
+"friendly_id": "junagadh",
+"cities": [
+{
+"title": "Junagadh",
+"code": "junagadh",
+"friendly_id": "junagadh"
+}
+]
+},
+{
+"title": "Kheda",
+"code": "kheda",
+"friendly_id": "kheda"
+},
+{
+"title": "Kutch",
+"code": "kutch",
+"friendly_id": "kutch"
+},
+{
+"title": "Mahisagar",
+"code": "mahisagar",
+"friendly_id": "mahisagar"
+},
+{
+"title": "Mehsana",
+"code": "mehsana",
+"friendly_id": "mehsana"
+},
+{
+"title": "Morbi",
+"code": "morbi",
+"friendly_id": "morbi"
+},
+{
+"title": "Nagar Haveli",
+"code": "nagar-haveli",
+"friendly_id": "nagar-haveli"
+},
+{
+"title": "Narmada ",
+"code": "narmada",
+"friendly_id": "narmada"
+},
+{
+"title": "Navsari",
+"code": "navsari",
+"friendly_id": "navsari"
+},
+{
+"title": "Panchmahal",
+"code": "panchmahal",
+"friendly_id": "panchmahal"
+},
+{
+"title": "Patan",
+"code": "patan",
+"friendly_id": "patan"
+},
+{
+"title": "Porbandar",
+"code": "porbandar",
+"friendly_id": "porbandar"
+},
+{
+"title": "Rajkot",
+"code": "rajkot",
+"friendly_id": "rajkot",
+"cities": [
+{
+"title": "Rajkot",
+"code": "rajkot",
+"friendly_id": "rajkot"
+}
+]
+},
+{
+"title": "Sabarkantha",
+"code": "sabarkantha",
+"friendly_id": "sabarkantha"
+},
+{
+"title": "Surat",
+"code": "surat",
+"friendly_id": "surat",
+"cities": [
+{
+"title": "Surat",
+"code": "surat",
+"friendly_id": "surat"
+}
+]
+},
+{
+"title": "Surendranagar",
+"code": "surendranagar",
+"friendly_id": "surendranagar"
+},
+{
+"title": "Tapi",
+"code": "tapi",
+"friendly_id": "tapi"
+},
+{
+"title": "Vadodara",
+"code": "vadodara",
+"friendly_id": "vadodara",
+"cities": [
+{
+"title": "Vadodara",
+"code": "vadodara",
+"friendly_id": "vadodara"
+}
+]
+},
+{
+"title": "Valsad",
+"code": "valsad",
+"friendly_id": "valsad"
+}
+]
+},
+{
+"title": "Haryana",
+"code": "haryana",
+"friendly_id": "haryana",
+"districts": [
+{
+"title": "Ambala",
+"code": "ambala",
+"friendly_id": "ambala",
+"cities": [
+{
+"title": "Ambala",
+"code": "ambala",
+"friendly_id": "ambala"
+}
+]
+},
+{
+"title": "Bhiwani",
+"code": "bhiwani",
+"friendly_id": "bhiwani",
+"cities": [
+{
+"title": "Bhivani",
+"code": "bhivani",
+"friendly_id": "bhivani"
+}
+]
+},
+{
+"title": "Chandigarh",
+"code": "chandigarh",
+"friendly_id": "chandigarh-ha",
+"cities": [
+{
+"title": "Chandigarh",
+"code": "chandigarh",
+"friendly_id": "chandigarh"
+}
+]
+},
+{
+"title": "Charkhi Dadri",
+"code": "charkhi-dadri",
+"friendly_id": "charkhi-dadri"
+},
+{
+"title": "Faridabad",
+"code": "faridabad",
+"friendly_id": "faridabad",
+"cities": [
+{
+"title": "Faridabad",
+"code": "faridabad",
+"friendly_id": "faridabad"
+}
+]
+},
+{
+"title": "Fatehabad",
+"code": "fatehabad",
+"friendly_id": "fatehabad"
+},
+{
+"title": "Gurugram",
+"code": "gurugram",
+"friendly_id": "gurugram",
+"cities": [
+{
+"title": "Gurugram",
+"code": "gurugram",
+"friendly_id": "gurugram"
+}
+]
+},
+{
+"title": "Hisar",
+"code": "hisar",
+"friendly_id": "hisar",
+"cities": [
+{
+"title": "Hisar",
+"code": "hisar",
+"friendly_id": "hisar"
+}
+]
+},
+{
+"title": "Jhajjar",
+"code": "jhajjar",
+"friendly_id": "jhajjar"
+},
+{
+"title": "Jind",
+"code": "jind",
+"friendly_id": "jind",
+"cities": [
+{
+"title": "Jind",
+"code": "jind",
+"friendly_id": "jind"
+}
+]
+},
+{
+"title": "Kaithal",
+"code": "kaithal",
+"friendly_id": "kaithal"
+},
+{
+"title": "Karnal",
+"code": "karnal",
+"friendly_id": "karnal",
+"cities": [
+{
+"title": "Karnal",
+"code": "karnal",
+"friendly_id": "karnal"
+}
+]
+},
+{
+"title": "Kurukshetra",
+"code": "kurukshetra",
+"friendly_id": "kurukshetra",
+"cities": [
+{
+"title": "Kurukshetra",
+"code": "kurukshetra",
+"friendly_id": "kurukshetra"
+}
+]
+},
+{
+"title": "Mahendragarh",
+"code": "mahendragarh",
+"friendly_id": "mahendragarh"
+},
+{
+"title": "Nuh",
+"code": "nuh",
+"friendly_id": "nuh"
+},
+{
+"title": "Palwal",
+"code": "palwal",
+"friendly_id": "palwal"
+},
+{
+"title": "Panchkula",
+"code": "panchkula",
+"friendly_id": "panchkula",
+"cities": [
+{
+"title": "Panchkula",
+"code": "panchkula",
+"friendly_id": "panchkula"
+}
+]
+},
+{
+"title": "Panipat",
+"code": "panipat",
+"friendly_id": "panipat",
+"cities": [
+{
+"title": "Panipat",
+"code": "panipat",
+"friendly_id": "panipat"
+}
+]
+},
+{
+"title": "Rewari",
+"code": "rewari",
+"friendly_id": "rewari"
+},
+{
+"title": "Rohtak",
+"code": "rohtak",
+"friendly_id": "rohtak",
+"cities": [
+{
+"title": "Rohtak",
+"code": "rohtak",
+"friendly_id": "rohtak"
+}
+]
+},
+{
+"title": "Sirsa",
+"code": "sirsa",
+"friendly_id": "sirsa"
+},
+{
+"title": "Sonipat",
+"code": "sonipat",
+"friendly_id": "sonipat"
+},
+{
+"title": "Yamunanagar",
+"code": "yamunanagar",
+"friendly_id": "yamunanagar"
+}
+]
+},
+{
+"title": "Himachal Pradesh",
+"code": "hp",
+"friendly_id": "himachal-pradesh",
+"districts": [
+{
+"title": "Bilaspur",
+"code": "bilaspur",
+"friendly_id": "bilaspur"
+},
+{
+"title": "Chamba",
+"code": "chamba",
+"friendly_id": "chamba",
+"cities": [
+{
+"title": "Chamba",
+"code": "chamba",
+"friendly_id": "chamba"
+}
+]
+},
+{
+"title": "Hamirpur",
+"code": "hamirpur",
+"friendly_id": "hamirpur"
+},
+{
+"title": "Kangra",
+"code": "kangra",
+"friendly_id": "kangra",
+"cities": [
+{
+"title": "Dharamshala",
+"code": "dharamshala",
+"friendly_id": "dharamshala"
+}
+]
+},
+{
+"title": "Kinnaur",
+"code": "kinnaur",
+"friendly_id": "kinnaur"
+},
+{
+"title": "Kullu",
+"code": "kullu",
+"friendly_id": "kullu",
+"cities": [
+{
+"title": "Kullu",
+"code": "kullu",
+"friendly_id": "kullu"
+}
+]
+},
+{
+"title": "Lahul Spiti",
+"code": "lahul-spiti",
+"friendly_id": "lahul-spiti"
+},
+{
+"title": "Mandi",
+"code": "mandi",
+"friendly_id": "mandi",
+"cities": [
+{
+"title": "Mandi",
+"code": "mandi",
+"friendly_id": "mandi"
+}
+]
+},
+{
+"title": "Shimla",
+"code": "shimla",
+"friendly_id": "shimla",
+"cities": [
+{
+"title": "Shimla",
+"code": "shimla",
+"friendly_id": "shimla"
+}
+]
+},
+{
+"title": "Sirmour",
+"code": "sirmour",
+"friendly_id": "sirmour",
+"cities": [
+{
+"title": "Nahan",
+"code": "nahan",
+"friendly_id": "nahan"
+}
+]
+},
+{
+"title": "Solan",
+"code": "solan",
+"friendly_id": "solan",
+"cities": [
+{
+"title": "Solan",
+"code": "solan",
+"friendly_id": "solan"
+}
+]
+},
+{
+"title": "Una",
+"code": "una",
+"friendly_id": "una",
+"cities": [
+{
+"title": "Una",
+"code": "una",
+"friendly_id": "una"
+},
+{
+"title": "Bilaspur",
+"code": "bilaspur",
+"friendly_id": "bilaspur"
+},
+{
+"title": "Hamirpur",
+"code": "hamirpur",
+"friendly_id": "hamirpur"
+}
+]
+}
+]
+},
+{
+"title": "Jammu And Kashmir",
+"code": "jk",
+"friendly_id": "jammu-and-kashmir",
+"districts": [
+{
+"title": "Anantnag",
+"code": "anantnag",
+"friendly_id": "anantnag",
+"cities": [
+{
+"title": "Anantnag",
+"code": "anantnag",
+"friendly_id": "anantnag"
+}
+]
+},
+{
+"title": "Bandipora",
+"code": "bandipora",
+"friendly_id": "bandipora",
+"cities": [
+{
+"title": "Bandipora",
+"code": "bandipora",
+"friendly_id": "bandipora"
+}
+]
+},
+{
+"title": "Baramulla",
+"code": "baramulla",
+"friendly_id": "baramulla",
+"cities": [
+{
+"title": "Baramulla",
+"code": "baramulla",
+"friendly_id": "baramulla"
+}
+]
+},
+{
+"title": "Budgam",
+"code": "budgam",
+"friendly_id": "budgam"
+},
+{
+"title": "Doda",
+"code": "doda",
+"friendly_id": "doda"
+},
+{
+"title": "Ganderbal",
+"code": "ganderbal",
+"friendly_id": "ganderbal"
+},
+{
+"title": "Jammu",
+"code": "jammu",
+"friendly_id": "jammu",
+"cities": [
+{
+"title": "Jammu",
+"code": "jammu",
+"friendly_id": "jammu"
+}
+]
+},
+{
+"title": "Kargil",
+"code": "kargil",
+"friendly_id": "kargil",
+"cities": [
+{
+"title": "Kargil",
+"code": "kargil",
+"friendly_id": "kargil"
+}
+]
+},
+{
+"title": "Kathua",
+"code": "kathua",
+"friendly_id": "kathua"
+},
+{
+"title": "Kishtawar",
+"code": "kishtawar",
+"friendly_id": "kishtawar"
+},
+{
+"title": "Kulgam",
+"code": "kulgam",
+"friendly_id": "kulgam",
+"cities": [
+{
+"title": "Kulgam",
+"code": "kulgam",
+"friendly_id": "kulgam"
+}
+]
+},
+{
+"title": "Kupwara",
+"code": "kupwara",
+"friendly_id": "kupwara",
+"cities": [
+{
+"title": "Kupwara",
+"code": "kupwara",
+"friendly_id": "kupwara"
+}
+]
+},
+{
+"title": "Leh",
+"code": "leh",
+"friendly_id": "leh"
+},
+{
+"title": "Poonch",
+"code": "poonch",
+"friendly_id": "poonch"
+},
+{
+"title": "Pulwama",
+"code": "pulwama",
+"friendly_id": "pulwama"
+},
+{
+"title": "Rajouri",
+"code": "rajouri",
+"friendly_id": "rajour"
+},
+{
+"title": "Ramban",
+"code": "ramban",
+"friendly_id": "ramban",
+"cities": [
+{
+"title": "Ramban",
+"code": "ramban",
+"friendly_id": "ramban"
+}
+]
+},
+{
+"title": "Reasi",
+"code": "reasi",
+"friendly_id": "ressai"
+},
+{
+"title": "Samba",
+"code": "samba",
+"friendly_id": "samba"
+},
+{
+"title": "Shopian",
+"code": "shopian",
+"friendly_id": "shopian"
+},
+{
+"title": "Srinagar",
+"code": "srinagar",
+"friendly_id": "srinagar",
+"cities": [
+{
+"title": "Srinagar",
+"code": "srinagar",
+"friendly_id": "srinagar"
+}
+]
+},
+{
+"title": "Udhampur",
+"code": "udhampur",
+"friendly_id": "udhampur",
+"cities": [
+{
+"title": "Udhampur",
+"code": "udhampur",
+"friendly_id": "udhampur"
+}
+]
+}
+]
+},
+{
+"title": "Jharkhand",
+"code": "jh",
+"friendly_id": "jharkhand",
+"districts": [
+{
+"title": "Bokaro",
+"code": "bokaro",
+"friendly_id": "bokaro",
+"cities": [
+{
+"title": "Bokaro",
+"code": "bokaro",
+"friendly_id": "bokaro"
+}
+]
+},
+{
+"title": "Chatra",
+"code": "chatra",
+"friendly_id": "chatra"
+},
+{
+"title": "Deoghar",
+"code": "deoghar",
+"friendly_id": "deoghar",
+"cities": [
+{
+"title": "Deoghar",
+"code": "deoghar",
+"friendly_id": "deoghar"
+}
+]
+},
+{
+"title": "Dhanbad",
+"code": "dhanbad",
+"friendly_id": "dhanbad",
+"cities": [
+{
+"title": "Dhanbad",
+"code": "dhanbad",
+"friendly_id": "dhanbad"
+}
+]
+},
+{
+"title": "Dumka",
+"code": "dumka",
+"friendly_id": "dumka",
+"cities": [
+{
+"title": "Dumka",
+"code": "dumka",
+"friendly_id": "dumka"
+}
+]
+},
+{
+"title": "East Singhbhum",
+"code": "east-singhbhum",
+"friendly_id": "east-singhbhum",
+"cities": [
+{
+"title": "Jamshedpur",
+"code": "jamshedpur",
+"friendly_id": "jamshedpur"
+}
+]
+},
+{
+"title": "Garhwa",
+"code": "garhwa",
+"friendly_id": "garhwa"
+},
+{
+"title": "Giridih",
+"code": "giridih",
+"friendly_id": "giridih",
+"cities": [
+{
+"title": "Giridih",
+"code": "giridih",
+"friendly_id": "giridih"
+}
+]
+},
+{
+"title": "Godda",
+"code": "godda",
+"friendly_id": "godda"
+},
+{
+"title": "Gumla",
+"code": "gumla",
+"friendly_id": "gumla"
+},
+{
+"title": "Hazaribagh",
+"code": "hazaribagh",
+"friendly_id": "hazaribagh",
+"cities": [
+{
+"title": "Hazaribagh",
+"code": "hazaribagh",
+"friendly_id": "hazaribagh"
+}
+]
+},
+{
+"title": "Jamtara",
+"code": "jamtara",
+"friendly_id": "jamtara"
+},
+{
+"title": "Khunti",
+"code": "khunti",
+"friendly_id": "khunti"
+},
+{
+"title": "Koderma",
+"code": "koderma",
+"friendly_id": "koderma"
+},
+{
+"title": "Latehar",
+"code": "latehar",
+"friendly_id": "latehar"
+},
+{
+"title": "Lohardaga",
+"code": "lohardaga",
+"friendly_id": "lohardaga"
+},
+{
+"title": "Pakur",
+"code": "pakur",
+"friendly_id": "pakur"
+},
+{
+"title": "Palamu",
+"code": "palamu",
+"friendly_id": "palamu",
+"cities": [
+{
+"title": "Medininagar",
+"code": "daltonganj",
+"friendly_id": "medininagar"
+}
+]
+},
+{
+"title": "Ramgarh",
+"code": "ramgarh",
+"friendly_id": "ramgarh"
+},
+{
+"title": "Ranchi",
+"code": "ranchi",
+"friendly_id": "ranchi",
+"cities": [
+{
+"title": "Ranchi",
+"code": "ranchi",
+"friendly_id": "ranchi"
+}
+]
+},
+{
+"title": "Sahibganj",
+"code": "sahibganj",
+"friendly_id": "sahibganj"
+},
+{
+"title": "Saraikela Kharsawan",
+"code": "saraikela-kharsawan",
+"friendly_id": "saraikela-kharsawan"
+},
+{
+"title": "Simdega",
+"code": "simdega",
+"friendly_id": "simdega"
+},
+{
+"title": "West Singhbhum",
+"code": "west-singhbhum",
+"friendly_id": "west-singhbhum",
+"cities": [
+{
+"title": "Chaibasa",
+"code": "chaibasa",
+"friendly_id": "chaibasa"
+}
+]
+}
+]
+},
+{
+"title": "Karnataka",
+"code": "ka",
+"friendly_id": "karnataka",
+"districts": [
+{
+"title": "Bagalkot",
+"code": "bagalkot",
+"friendly_id": "bagalkot"
+},
+{
+"title": "Bangaluru(Rural)",
+"code": "bangaluru-rural",
+"friendly_id": "bangaluru-rural"
+},
+{
+"title": "Bangaluru(Urban)",
+"code": "bangaluru-urban",
+"friendly_id": "bangaluru-urban",
+"cities": [
+{
+"title": "Bengaluru",
+"code": "bengaluru",
+"friendly_id": "bengaluru"
+}
+]
+},
+{
+"title": "Belgavi",
+"code": "belgavi",
+"friendly_id": "belgavi",
+"cities": [
+{
+"title": "Belgavi",
+"code": "belgavi",
+"friendly_id": "belgavi"
+}
+]
+},
+{
+"title": "Bellary",
+"code": "bellary",
+"friendly_id": "bellary",
+"cities": [
+{
+"title": "Bellary",
+"code": "bellary",
+"friendly_id": "bellary"
+}
+]
+},
+{
+"title": "Bidar",
+"code": "bidar",
+"friendly_id": "bidar"
+},
+{
+"title": "Chamrajnagar",
+"code": "chamrajnagar",
+"friendly_id": "chamrajnagar"
+},
+{
+"title": "Chikkballapur",
+"code": "chikkballapur",
+"friendly_id": "chikkballapur"
+},
+{
+"title": "Chikkmagaluru",
+"code": "chikkmagaluru",
+"friendly_id": "chikkmagaluru"
+},
+{
+"title": "Chitradurga",
+"code": "chitradurga",
+"friendly_id": "chitradurga"
+},
+{
+"title": "Dakshina Kannada",
+"code": "dakshina-kannada",
+"friendly_id": "dakshina-kannada",
+"cities": [
+{
+"title": "Mangaluru",
+"code": "mangaluru",
+"friendly_id": "mangaluru"
+}
+]
+},
+{
+"title": "Davanagere",
+"code": "davanagere",
+"friendly_id": "davanagere",
+"cities": [
+{
+"title": "Davanagere",
+"code": "davanagere",
+"friendly_id": "davanagere"
+}
+]
+},
+{
+"title": "Dharwad",
+"code": "dharwad",
+"friendly_id": "dharwad",
+"cities": [
+{
+"title": "Hubli Dharwad",
+"code": "hubli-dharwad",
+"friendly_id": "hubli-dharwad"
+}
+]
+},
+{
+"title": "Gadag",
+"code": "gadag",
+"friendly_id": "gadag"
+},
+{
+"title": "Hassan",
+"code": "hassan",
+"friendly_id": "hassan"
+},
+{
+"title": "Haveri",
+"code": "haveri",
+"friendly_id": "haveri"
+},
+{
+"title": "Hubli",
+"code": "hubli",
+"friendly_id": "hubli"
+},
+{
+"title": "Kalburgi",
+"code": "kalburgi",
+"friendly_id": "kalburgi",
+"cities": [
+{
+"title": "Kalburgi",
+"code": "kalburgi",
+"friendly_id": "kalburgi"
+}
+]
+},
+{
+"title": "Kodagu",
+"code": "kodagu",
+"friendly_id": "kodagu"
+},
+{
+"title": "Kolar",
+"code": "kolar",
+"friendly_id": "kolar"
+},
+{
+"title": "Koppal",
+"code": "koppal",
+"friendly_id": "koppal"
+},
+{
+"title": "Mandya",
+"code": "mandya",
+"friendly_id": "mandya"
+},
+{
+"title": "Mysuru",
+"code": "mysuru",
+"friendly_id": "mysuru",
+"cities": [
+{
+"title": "Mysuru",
+"code": "mysuru",
+"friendly_id": "mysuru"
+}
+]
+},
+{
+"title": "Raichur",
+"code": "raichur",
+"friendly_id": "raichur"
+},
+{
+"title": "Ramnagar",
+"code": "ramnagar",
+"friendly_id": "ramnagar"
+},
+{
+"title": "Shimoga",
+"code": "shimoga",
+"friendly_id": "shimoga",
+"cities": [
+{
+"title": "Shivamogga",
+"code": "shivamogga",
+"friendly_id": "shivamogga"
+}
+]
+},
+{
+"title": "Tumkur",
+"code": "tumkur",
+"friendly_id": "tumkur",
+"cities": [
+{
+"title": "Tumkur",
+"code": "tumkur",
+"friendly_id": "tumkur"
+}
+]
+},
+{
+"title": "Udupi",
+"code": "udupi",
+"friendly_id": "udupi"
+},
+{
+"title": "Uttarkannada",
+"code": "uttarkannada",
+"friendly_id": "uttarkannada"
+},
+{
+"title": "Vijaypur",
+"code": "vijaypur",
+"friendly_id": "vijaypur"
+},
+{
+"title": "Yadigir",
+"code": "yadigir",
+"friendly_id": "yadigir"
+}
+]
+},
+{
+"title": "Kerala",
+"code": "kerala",
+"friendly_id": "kerala",
+"districts": [
+{
+"title": "Alappuzha",
+"code": "alappuzha",
+"friendly_id": "alappuza",
+"cities": [
+{
+"title": "Alappuzha",
+"code": "alappuzha",
+"friendly_id": "alappuzha"
+}
+]
+},
+{
+"title": "Ernakulam",
+"code": "ernakulam",
+"friendly_id": "ernakulam",
+"cities": [
+{
+"title": "Kochi",
+"code": "kochi",
+"friendly_id": "kochi"
+}
+]
+},
+{
+"title": "Idukki",
+"code": "idukki",
+"friendly_id": "idukki"
+},
+{
+"title": "Kannur",
+"code": "kannur",
+"friendly_id": "kannur",
+"cities": [
+{
+"title": "Kannur",
+"code": "kannur",
+"friendly_id": "kannur"
+}
+]
+},
+{
+"title": "Kasargod",
+"code": "kasargod",
+"friendly_id": "kasargod"
+},
+{
+"title": "Kollam",
+"code": "kollam",
+"friendly_id": "kollam"
+},
+{
+"title": "Kottayam",
+"code": "kottayam",
+"friendly_id": "kottayam",
+"cities": [
+{
+"title": "Kottayam",
+"code": "kottayam",
+"friendly_id": "kottayam"
+}
+]
+},
+{
+"title": "Kozhikode",
+"code": "kozhikode",
+"friendly_id": "kozhikode",
+"cities": [
+{
+"title": "Kozhikode",
+"code": "kozhikode",
+"friendly_id": "kozhikode"
+}
+]
+},
+{
+"title": "Malappuram",
+"code": "malappuram",
+"friendly_id": "malappuram",
+"cities": [
+{
+"title": "Malappuram",
+"code": "malappuram",
+"friendly_id": "malappuram"
+}
+]
+},
+{
+"title": "Palakkad",
+"code": "palakkad",
+"friendly_id": "palakkad",
+"cities": [
+{
+"title": "Palakkad",
+"code": "palakkad",
+"friendly_id": "palakkad"
+}
+]
+},
+{
+"title": "Pathanamthitta",
+"code": "pathanamthitta",
+"friendly_id": "pathanamthitta"
+},
+{
+"title": "Thiruvananthapuram",
+"code": "thiruvananthapuram",
+"friendly_id": "thiruvananthapuram",
+"cities": [
+{
+"title": "Thiruvananthapuram",
+"code": "thiruvananthapuram",
+"friendly_id": "thiruvananthapuram"
+}
+]
+},
+{
+"title": "Thrissur",
+"code": "thrissur",
+"friendly_id": "thrissur",
+"cities": [
+{
+"title": "Thrissur",
+"code": "thrissur",
+"friendly_id": "thrissur"
+}
+]
+},
+{
+"title": "Wayanad",
+"code": "wayanad",
+"friendly_id": "wayanad",
+"cities": [
+{
+"title": "Kalpetta",
+"code": "kalpetta",
+"friendly_id": "kalpetta"
+}
+]
+}
+]
+},
+{
+"title": "Madhya Pradesh",
+"code": "mp",
+"friendly_id": "madhya-pradesh",
+"districts": [
+{
+"title": "Agar",
+"code": "agar",
+"friendly_id": "agar"
+},
+{
+"title": "Alirajpur",
+"code": "alirajpur",
+"friendly_id": "alirajpur"
+},
+{
+"title": "Anuppur",
+"code": "anuppur",
+"friendly_id": "anuppur"
+},
+{
+"title": "Ashoknagar",
+"code": "ashoknagar",
+"friendly_id": "ashoknagar"
+},
+{
+"title": "Balaghat",
+"code": "balaghat",
+"friendly_id": "balaghat"
+},
+{
+"title": "Barwani",
+"code": "barwani",
+"friendly_id": "barwani"
+},
+{
+"title": "Betul",
+"code": "betul",
+"friendly_id": "betul"
+},
+{
+"title": "Bhind",
+"code": "bhind",
+"friendly_id": "bhind"
+},
+{
+"title": "Bhopal",
+"code": "bhopal",
+"friendly_id": "bhopal",
+"cities": [
+{
+"title": "Bhopal",
+"code": "bhopal",
+"friendly_id": "bhopal"
+}
+]
+},
+{
+"title": "Burhanpur",
+"code": "burhanpur",
+"friendly_id": "burhanpur"
+},
+{
+"title": "Chhatarpur",
+"code": "chhatarpur",
+"friendly_id": "chhatarpur"
+},
+{
+"title": "Chhindwara",
+"code": "chhindwara",
+"friendly_id": "chhindwara",
+"cities": [
+{
+"title": "Chhindwara",
+"code": "chhindwara",
+"friendly_id": "chhindwara"
+}
+]
+},
+{
+"title": "Damoh",
+"code": "damoh",
+"friendly_id": "damoh"
+},
+{
+"title": "Datia",
+"code": "datia",
+"friendly_id": "datia"
+},
+{
+"title": "Dewas",
+"code": "dewas",
+"friendly_id": "dewas"
+},
+{
+"title": "Dhar",
+"code": "dhar",
+"friendly_id": "dhar"
+},
+{
+"title": "Dindori",
+"code": "dindori",
+"friendly_id": "dindori"
+},
+{
+"title": "Guna",
+"code": "guna",
+"friendly_id": "guna"
+},
+{
+"title": "Gwalior",
+"code": "gwalior",
+"friendly_id": "gwalior",
+"cities": [
+{
+"title": "Gwalior",
+"code": "gwalior",
+"friendly_id": "gwalior"
+}
+]
+},
+{
+"title": "Harda",
+"code": "harda",
+"friendly_id": "harda"
+},
+{
+"title": "Hoshangabad",
+"code": "hoshangabad",
+"friendly_id": "hoshangabad"
+},
+{
+"title": "Indore",
+"code": "indore",
+"friendly_id": "indore",
+"cities": [
+{
+"title": "Indore",
+"code": "indore",
+"friendly_id": "indore"
+}
+]
+},
+{
+"title": "Jabalpur",
+"code": "jabalpur",
+"friendly_id": "jabalpur",
+"cities": [
+{
+"title": "Jabalpur",
+"code": "jabalpur",
+"friendly_id": "jabalpur"
+}
+]
+},
+{
+"title": "Jhabua",
+"code": "jhabua",
+"friendly_id": "jhabua"
+},
+{
+"title": "Katni",
+"code": "katni",
+"friendly_id": "katni",
+"cities": [
+{
+"title": "Katni",
+"code": "katni",
+"friendly_id": "katni"
+}
+]
+},
+{
+"title": "Khandwa East Nimar",
+"code": "khandwa-east-nimar",
+"friendly_id": "khandwa-east-nimar"
+},
+{
+"title": "Khargone West Nimar",
+"code": "khargone-west-nimar",
+"friendly_id": "khargone-west-nimar"
+},
+{
+"title": "Mandla",
+"code": "mandla",
+"friendly_id": "mandla"
+},
+{
+"title": "Mandsaur",
+"code": "mandsaur",
+"friendly_id": "mandsaur",
+"cities": [
+{
+"title": "Mandsaur",
+"code": "mandsaur",
+"friendly_id": "mandsaur"
+}
+]
+},
+{
+"title": "Morena",
+"code": "morena",
+"friendly_id": "morena"
+},
+{
+"title": "Narsinghpur",
+"code": "narsinghpur",
+"friendly_id": "narsinghpur"
+},
+{
+"title": "Neemuch",
+"code": "neemuch",
+"friendly_id": "neemuch"
+},
+{
+"title": "Niwari",
+"code": "niwari",
+"friendly_id": "niwari"
+},
+{
+"title": "Panna",
+"code": "panna",
+"friendly_id": "panna"
+},
+{
+"title": "Raisen",
+"code": "raisen",
+"friendly_id": "raisen"
+},
+{
+"title": "Rajgarh",
+"code": "rajgarh",
+"friendly_id": "rajgarh"
+},
+{
+"title": "Ratlam",
+"code": "ratlam",
+"friendly_id": "ratlam",
+"cities": [
+{
+"title": "Ratlam",
+"code": "ratlam",
+"friendly_id": "ratlam"
+}
+]
+},
+{
+"title": "Rewa",
+"code": "rewa",
+"friendly_id": "rewa"
+},
+{
+"title": "Sagar",
+"code": "sagar",
+"friendly_id": "sagar",
+"cities": [
+{
+"title": "Sagar",
+"code": "sagar",
+"friendly_id": "sagar"
+}
+]
+},
+{
+"title": "Satna",
+"code": "satna",
+"friendly_id": "satna"
+},
+{
+"title": "Sehore",
+"code": "sehore",
+"friendly_id": "sehore"
+},
+{
+"title": "Seoni",
+"code": "seoni",
+"friendly_id": "seoni"
+},
+{
+"title": "Shahdol",
+"code": "shahdol",
+"friendly_id": "shahdol"
+},
+{
+"title": "Shajapur",
+"code": "shajapur",
+"friendly_id": "shajapur"
+},
+{
+"title": "Sheopur",
+"code": "sheopur",
+"friendly_id": "sheopur"
+},
+{
+"title": "Shivpuri",
+"code": "shivpuri",
+"friendly_id": "shivpuri"
+},
+{
+"title": "Sidhi",
+"code": "sidhi",
+"friendly_id": "sidhi"
+},
+{
+"title": "Singrauli",
+"code": "singrauli",
+"friendly_id": "singrauli"
+},
+{
+"title": "Tikamgarh",
+"code": "tikamgarh",
+"friendly_id": "tikamgarh"
+},
+{
+"title": "Ujjain",
+"code": "ujjain",
+"friendly_id": "ujjain",
+"cities": [
+{
+"title": "Ujjain",
+"code": "ujjain",
+"friendly_id": "ujjain"
+},
+{
+"title": "Satna",
+"code": "satna",
+"friendly_id": "satna"
+},
+{
+"title": "Rewa",
+"code": "rewa",
+"friendly_id": "rewa"
+},
+{
+"title": "Dewas",
+"code": "dewas",
+"friendly_id": "dewas"
+}
+]
+},
+{
+"title": "Umaria",
+"code": "umaria",
+"friendly_id": "umaria"
+},
+{
+"title": "Vidisha",
+"code": "vidisha",
+"friendly_id": "vidisha"
+}
+]
+},
+{
+"title": "Maharashtra",
+"code": "mh",
+"friendly_id": "maharashtra",
+"districts": [
+{
+"title": "Ahmednagar",
+"code": "ahmednagar",
+"friendly_id": "ahmednagar"
+},
+{
+"title": "Akola",
+"code": "akola",
+"friendly_id": "akola"
+},
+{
+"title": "Amravati",
+"code": "amravati",
+"friendly_id": "amravati",
+"cities": [
+{
+"title": "Amravati",
+"code": "amravati",
+"friendly_id": "amravati"
+}
+]
+},
+{
+"title": "Aurangabad",
+"code": "aurangabad",
+"friendly_id": "aurangabad",
+"cities": [
+{
+"title": "Aurangabad",
+"code": "auragabad",
+"friendly_id": "aurangabad"
+}
+]
+},
+{
+"title": "Beed",
+"code": "beed",
+"friendly_id": "beed"
+},
+{
+"title": "Bhandara ",
+"code": "bhandara",
+"friendly_id": "bhandara"
+},
+{
+"title": "Buldana ",
+"code": "buldana",
+"friendly_id": "buldana"
+},
+{
+"title": "Chandrapur",
+"code": "chandrapur",
+"friendly_id": "chandrapur"
+},
+{
+"title": "Dhule",
+"code": "dhule",
+"friendly_id": "dhule"
+},
+{
+"title": "Gadchiroli",
+"code": "gadchiroli",
+"friendly_id": "gadchiroli"
+},
+{
+"title": "Gondia",
+"code": "gondia",
+"friendly_id": "gondia"
+},
+{
+"title": "Hingoli",
+"code": "hingoli",
+"friendly_id": "hingoli"
+},
+{
+"title": "Jalgaon",
+"code": "jalgaon",
+"friendly_id": "jalgaon"
+},
+{
+"title": "Jalna",
+"code": "jalna",
+"friendly_id": "jalna"
+},
+{
+"title": "Kolhapur",
+"code": "kolhapur",
+"friendly_id": "kolhapur",
+"cities": [
+{
+"title": "Kolhapur",
+"code": "kolhapur",
+"friendly_id": "kolhapur"
+}
+]
+},
+{
+"title": "Latur",
+"code": "latur",
+"friendly_id": "latur"
+},
+{
+"title": "Mumbai",
+"code": "mumbai",
+"friendly_id": "mumbai",
+"cities": [
+{
+"title": "Mumbai",
+"code": "mumbai",
+"friendly_id": "mumbai"
+}
+]
+},
+{
+"title": "Nagpur",
+"code": "nagpur",
+"friendly_id": "nagpur",
+"cities": [
+{
+"title": "Nagpur",
+"code": "nagpur",
+"friendly_id": "nagpur"
+}
+]
+},
+{
+"title": "Nanded",
+"code": "nanded",
+"friendly_id": "nanded"
+},
+{
+"title": "Nandurbar",
+"code": "nandurbar",
+"friendly_id": "nandurbar"
+},
+{
+"title": "Nashik",
+"code": "nashik",
+"friendly_id": "nashik",
+"cities": [
+{
+"title": "Nashik",
+"code": "nashik",
+"friendly_id": "nashik"
+}
+]
+},
+{
+"title": "Osmanabad",
+"code": "osmanabad",
+"friendly_id": "osmanabad"
+},
+{
+"title": "Palghar",
+"code": "palghar",
+"friendly_id": "palghar"
+},
+{
+"title": "Parbhani ",
+"code": "parbhani",
+"friendly_id": "parbhani"
+},
+{
+"title": "Pune",
+"code": "pune",
+"friendly_id": "pune",
+"cities": [
+{
+"title": "Pune",
+"code": "pune",
+"friendly_id": "pune"
+}
+]
+},
+{
+"title": "Raigad",
+"code": "raigad",
+"friendly_id": "raigad"
+},
+{
+"title": "Ratnagiri",
+"code": "ratnagiri",
+"friendly_id": "ratnagiri"
+},
+{
+"title": "Sangli",
+"code": "sangli",
+"friendly_id": "sangli"
+},
+{
+"title": "Satara",
+"code": "satara",
+"friendly_id": "satara"
+},
+{
+"title": "Sindhudurg",
+"code": "sindhudurg",
+"friendly_id": "sindhudurg"
+},
+{
+"title": "Solapur",
+"code": "solapur",
+"friendly_id": "solapur",
+"cities": [
+{
+"title": "Solapur",
+"code": "solapur",
+"friendly_id": "solapur"
+}
+]
+},
+{
+"title": "Thane",
+"code": "thane",
+"friendly_id": "thane",
+"cities": [
+{
+"title": "Kalyan Dombivali",
+"code": "kalyan-dombivali",
+"friendly_id": "kalyan-dombivali"
+},
+{
+"title": "Thane",
+"code": "thane",
+"friendly_id": "thane"
+}
+]
+},
+{
+"title": "Wardha",
+"code": "wardha",
+"friendly_id": "wardha"
+},
+{
+"title": "Washim",
+"code": "washim",
+"friendly_id": "washim"
+},
+{
+"title": "Yavatmal",
+"code": "yavatmal",
+"friendly_id": "yavatmal"
+}
+]
+},
+{
+"title": "Odisha",
+"code": "or",
+"friendly_id": "odisha",
+"districts": [
+{
+"title": "Anugul",
+"code": "anugul",
+"friendly_id": "anugul"
+},
+{
+"title": "Balangir",
+"code": "balangir",
+"friendly_id": "balangir"
+},
+{
+"title": "Balasore",
+"code": "balasore",
+"friendly_id": "balasore",
+"cities": [
+{
+"title": "Balasore",
+"code": "balasore",
+"friendly_id": "balasore"
+}
+]
+},
+{
+"title": "Bargarh",
+"code": "bargarh",
+"friendly_id": "bargarh"
+},
+{
+"title": "Bhadrak",
+"code": "bhadrak",
+"friendly_id": "bhadrak",
+"cities": [
+{
+"title": "Bhadrak",
+"code": "bhadrak",
+"friendly_id": "bhadrak"
+}
+]
+},
+{
+"title": "Boudh",
+"code": "boudh",
+"friendly_id": "boudh"
+},
+{
+"title": "Cuttack",
+"code": "cuttack",
+"friendly_id": "cuttack",
+"cities": [
+{
+"title": "Cuttack",
+"code": "cuttack",
+"friendly_id": "cuttack"
+}
+]
+},
+{
+"title": "Deogarh",
+"code": "deogarh",
+"friendly_id": "deogarh"
+},
+{
+"title": "Dhenkanal",
+"code": "dhenkanal",
+"friendly_id": "dhenkanal"
+},
+{
+"title": "Gajapati",
+"code": "gajapati",
+"friendly_id": "gajapati"
+},
+{
+"title": "Ganjam",
+"code": "ganjam",
+"friendly_id": "ganjam",
+"cities": [
+{
+"title": "Berhampur",
+"code": "berhampur",
+"friendly_id": "berhampur"
+}
+]
+},
+{
+"title": "Jagatsinghpur",
+"code": "jagatsinghpur",
+"friendly_id": "jagatsinghpur"
+},
+{
+"title": "Jajpur",
+"code": "jajpur",
+"friendly_id": "jajpur"
+},
+{
+"title": "Jharsuguda",
+"code": "jharsuguda",
+"friendly_id": "jharsuguda"
+},
+{
+"title": "Kalahandi",
+"code": "kalahandi",
+"friendly_id": "kalahandi"
+},
+{
+"title": "Kandhamal",
+"code": "kandhamal",
+"friendly_id": "kandhamal"
+},
+{
+"title": "Kendrapara",
+"code": "kendrapara",
+"friendly_id": "kendrapara"
+},
+{
+"title": "Keonjhar",
+"code": "keonjhar",
+"friendly_id": "keonjhar",
+"cities": [
+{
+"title": "Keonjhar",
+"code": "keonjhar",
+"friendly_id": "keonjhar"
+}
+]
+},
+{
+"title": "Khurda",
+"code": "khurda",
+"friendly_id": "khurda",
+"cities": [
+{
+"title": "Bhubaneswar",
+"code": "bhubaneswar",
+"friendly_id": "bhubaneswar"
+}
+]
+},
+{
+"title": "Koraput",
+"code": "koraput",
+"friendly_id": "koraput"
+},
+{
+"title": "Malkangiri",
+"code": "malkangiri",
+"friendly_id": "malkangiri"
+},
+{
+"title": "Mayurbhanj",
+"code": "mayurbhanj",
+"friendly_id": "mayurbhanj",
+"cities": [
+{
+"title": "Baripada",
+"code": "baripada",
+"friendly_id": "baripada"
+}
+]
+},
+{
+"title": "Nabarangpur",
+"code": "nabarangpur",
+"friendly_id": "nabarangpur"
+},
+{
+"title": "Nayagarh",
+"code": "nayagarh",
+"friendly_id": "nayagarh"
+},
+{
+"title": "Nuapada",
+"code": "nuapada",
+"friendly_id": "nuapada"
+},
+{
+"title": "Puri",
+"code": "puri",
+"friendly_id": "puri",
+"cities": [
+{
+"title": "Puri",
+"code": "puri",
+"friendly_id": "puri"
+}
+]
+},
+{
+"title": "Rayagada",
+"code": "rayagada",
+"friendly_id": "rayagada"
+},
+{
+"title": "Sambalpur",
+"code": "sambalpur",
+"friendly_id": "sambalpur",
+"cities": [
+{
+"title": "Sambalpur",
+"code": "sambalpur",
+"friendly_id": "sambalpur"
+}
+]
+},
+{
+"title": "Subarnapur",
+"code": "subarnapur",
+"friendly_id": "subarnapur"
+},
+{
+"title": "Subarnapur",
+"code": "subarnapur",
+"friendly_id": "subarnapur"
+},
+{
+"title": "Sundargarh",
+"code": "sundargarh",
+"friendly_id": "sundargarh",
+"cities": [
+{
+"title": "Rourkela",
+"code": "rourkela",
+"friendly_id": "rourkela"
+}
+]
+}
+]
+},
+{
+"title": "Punjab",
+"code": "pb",
+"friendly_id": "punjab",
+"districts": [
+{
+"title": "Amritsar",
+"code": "amritsar",
+"friendly_id": "amritsar",
+"cities": [
+{
+"title": "Amritsar",
+"code": "amritsar",
+"friendly_id": "amritsar"
+}
+]
+},
+{
+"title": "Barnala",
+"code": "barnala",
+"friendly_id": "barnala"
+},
+{
+"title": "Bathinda",
+"code": "bathinda",
+"friendly_id": "bathinda"
+},
+{
+"title": "Chandigarh",
+"code": "chandigarh",
+"friendly_id": "chandigarh-pb",
+"cities": [
+{
+"title": "Chandigarh",
+"code": "chandigarh",
+"friendly_id": "chandigarh-1"
+}
+]
+},
+{
+"title": "Faridkot",
+"code": "faridkot",
+"friendly_id": "faridkot"
+},
+{
+"title": "Fatehgarh Sahib",
+"code": "fatehgarh-sahib",
+"friendly_id": "fatehgarh-sahib",
+"cities": [
+{
+"title": "Fatehgarh Sahib",
+"code": "fatehgarh-sahib",
+"friendly_id": "fatehgarh-sahib"
+}
+]
+},
+{
+"title": "Fazilka",
+"code": "fazilka",
+"friendly_id": "fazilka"
+},
+{
+"title": "Ferozpur",
+"code": "firozpur",
+"friendly_id": "firozpur"
+},
+{
+"title": "Gurdaspur",
+"code": "gurdaspur",
+"friendly_id": "gurdaspur"
+},
+{
+"title": "Hoshiarpur",
+"code": "hoshiarpur",
+"friendly_id": "hoshiarpur",
+"cities": [
+{
+"title": "Hoshiarpur",
+"code": "hoshiarpur",
+"friendly_id": "hoshiarpur"
+}
+]
+},
+{
+"title": "Jalandhar",
+"code": "jalandhar",
+"friendly_id": "jalandhar",
+"cities": [
+{
+"title": "Jalandhar",
+"code": "jalandhar",
+"friendly_id": "jalandhar"
+}
+]
+},
+{
+"title": "Kapurthala",
+"code": "kapurthala",
+"friendly_id": "kapurthala"
+},
+{
+"title": "Ludhiana",
+"code": "ludhiana",
+"friendly_id": "ludhiana",
+"cities": [
+{
+"title": "Ludhiana",
+"code": "ludhiana",
+"friendly_id": "ludhiana"
+}
+]
+},
+{
+"title": "Mansa",
+"code": "mansa",
+"friendly_id": "mansa"
+},
+{
+"title": "Moga",
+"code": "moga",
+"friendly_id": "moga"
+},
+{
+"title": "Pathankot",
+"code": "pathankot",
+"friendly_id": "pathankot"
+},
+{
+"title": "Patiala",
+"code": "patiala",
+"friendly_id": "patiala",
+"cities": [
+{
+"title": "Patiala",
+"code": "patiala",
+"friendly_id": "patiala"
+}
+]
+},
+{
+"title": "Rupnagar",
+"code": "rupnagar",
+"friendly_id": "rupnagar"
+},
+{
+"title": "S.B.S Nagar",
+"code": "sbs-nagar",
+"friendly_id": "shaheed-bhagat-singh-nagar"
+},
+{
+"title": "Sahibzada Ajit Singh Nagar",
+"code": "sahibzada-ajit-singh-nagar",
+"friendly_id": "sahibzada-ajit-singh-nagar"
+},
+{
+"title": "Sangrur",
+"code": "sangrur",
+"friendly_id": "sangrur"
+},
+{
+"title": "Sri Muktsar Sahib",
+"code": "sri-muktsar-sahib",
+"friendly_id": "sri-muktsar-sahib"
+},
+{
+"title": "Tarn Taran",
+"code": "tarn-taran",
+"friendly_id": "tran-taran",
+"cities": [
+{
+"title": "Tarn Taran",
+"code": "tarn-taran",
+"friendly_id": "tarn-taran"
+},
+{
+"title": "Sangrur",
+"code": "sangrur",
+"friendly_id": "sangrur"
+},
+{
+"title": "Gurdaspur",
+"code": "gurdaspur",
+"friendly_id": "gurdaspur"
+},
+{
+"title": "Bathinda",
+"code": "bathinda",
+"friendly_id": "bathinda"
+}
+]
+}
+]
+},
+{
+"title": "Rajasthan",
+"code": "rj",
+"friendly_id": "rajasthan",
+"districts": [
+{
+"title": "Ajmer",
+"code": "ajmer",
+"friendly_id": "ajmer",
+"cities": [
+{
+"title": "Ajmer",
+"code": "ajmer",
+"friendly_id": "ajmer"
+}
+]
+},
+{
+"title": "Alwar",
+"code": "alwar",
+"friendly_id": "alwar",
+"cities": [
+{
+"title": "Alwar",
+"code": "alwar",
+"friendly_id": "alwar"
+}
+]
+},
+{
+"title": "Banswara",
+"code": "banswara",
+"friendly_id": "banswara"
+},
+{
+"title": "Baran",
+"code": "baran",
+"friendly_id": "baran"
+},
+{
+"title": "Barmer",
+"code": "barmer",
+"friendly_id": "barmer"
+},
+{
+"title": "Bharatpur",
+"code": "bharatpur",
+"friendly_id": "bharatpur",
+"cities": [
+{
+"title": "Bharatpur",
+"code": "bharatpur",
+"friendly_id": "bharatpur"
+}
+]
+},
+{
+"title": "Bhilwara",
+"code": "bhilwara",
+"friendly_id": "bhilwara",
+"cities": [
+{
+"title": "Bhilwara",
+"code": "bhilwara",
+"friendly_id": "bhilwara"
+}
+]
+},
+{
+"title": "Bikaner",
+"code": "bikaner",
+"friendly_id": "bikaner",
+"cities": [
+{
+"title": "Bikaner",
+"code": "bikaner",
+"friendly_id": "bikaner"
+}
+]
+},
+{
+"title": "Bundi",
+"code": "bundi",
+"friendly_id": "bundi"
+},
+{
+"title": "Chittaurgarh",
+"code": "chittaurgarh",
+"friendly_id": "chittaurgarh"
+},
+{
+"title": "Churu",
+"code": "churu",
+"friendly_id": "churu"
+},
+{
+"title": "Dausa",
+"code": "dausa",
+"friendly_id": "dausa"
+},
+{
+"title": "Dholpur",
+"code": "dholpur",
+"friendly_id": "dholpur"
+},
+{
+"title": "Dungarpur",
+"code": "dungarpur",
+"friendly_id": "dungarpur"
+},
+{
+"title": "Hanumangarh",
+"code": "hanumangarh",
+"friendly_id": "hanumangarh"
+},
+{
+"title": "Jaipur",
+"code": "jaipur",
+"friendly_id": "jaipur",
+"cities": [
+{
+"title": "Jaipur",
+"code": "jaipur",
+"friendly_id": "jaipur"
+}
+]
+},
+{
+"title": "Jaisalmer",
+"code": "jaisalmer",
+"friendly_id": "jaisalmer"
+},
+{
+"title": "Jalore",
+"code": "jalore",
+"friendly_id": "jalore"
+},
+{
+"title": "Jhalawar",
+"code": "jhalawar",
+"friendly_id": "jhalawar"
+},
+{
+"title": "Jhunjhnu",
+"code": "jhunjhnu",
+"friendly_id": "jhunjhnu"
+},
+{
+"title": "Jodhpur",
+"code": "jodhpur",
+"friendly_id": "jodhpur",
+"cities": [
+{
+"title": "Jodhpur",
+"code": "jodhpur",
+"friendly_id": "jodhpur"
+}
+]
+},
+{
+"title": "Karauli",
+"code": "karauli",
+"friendly_id": "karauli"
+},
+{
+"title": "Kota",
+"code": "kota",
+"friendly_id": "kota",
+"cities": [
+{
+"title": "Kota",
+"code": "kota",
+"friendly_id": "kota"
+}
+]
+},
+{
+"title": "Nagore",
+"code": "nagore",
+"friendly_id": "nagore",
+"cities": [
+{
+"title": "Nagaur",
+"code": "nagaur",
+"friendly_id": "nagaur"
+}
+]
+},
+{
+"title": "Pali",
+"code": "pali",
+"friendly_id": "pali"
+},
+{
+"title": "Pratapgarh",
+"code": "pratapgarh",
+"friendly_id": "pratapgarh"
+},
+{
+"title": "Rajsamand",
+"code": "rajsamand",
+"friendly_id": "rajsamand"
+},
+{
+"title": "Sawai Madhopur",
+"code": "sawai-madhopur",
+"friendly_id": "sawai-madhopur"
+},
+{
+"title": "Sikar",
+"code": "sikar",
+"friendly_id": "sikar",
+"cities": [
+{
+"title": "Sikar",
+"code": "sikar",
+"friendly_id": "sikar"
+}
+]
+},
+{
+"title": "Sirohi",
+"code": "sirohi",
+"friendly_id": "sirohi"
+},
+{
+"title": "Sri Ganganagar",
+"code": "sri-ganganagar",
+"friendly_id": "sri-ganganagar",
+"cities": [
+{
+"title": "Sriganganagar",
+"code": "sriganganagar",
+"friendly_id": "sriganganagar"
+}
+]
+},
+{
+"title": "Tonk",
+"code": "tonk",
+"friendly_id": "tonk"
+},
+{
+"title": "Udaipur",
+"code": "udaipur",
+"friendly_id": "udaipur",
+"cities": [
+{
+"title": "Udaipur",
+"code": "udaipur",
+"friendly_id": "udaipur"
+}
+]
+}
+]
+},
+{
+"title": "Tamil Nadu",
+"code": "tamil-nadu",
+"friendly_id": "tamil-nadu",
+"districts": [
+{
+"title": "Ariyalur",
+"code": "ariyalur",
+"friendly_id": "ariyalur"
+},
+{
+"title": "Chengalpattu",
+"code": "chengalpattu",
+"friendly_id": "chengalpattu"
+},
+{
+"title": "Chennai",
+"code": "chennai",
+"friendly_id": "chennai",
+"cities": [
+{
+"title": "Chennai",
+"code": "chennai",
+"friendly_id": "chennai"
+}
+]
+},
+{
+"title": "Coimbatore",
+"code": "coimbatore",
+"friendly_id": "coimbatore",
+"cities": [
+{
+"title": "Coimbatore",
+"code": "coimbatore",
+"friendly_id": "coimbatore"
+}
+]
+},
+{
+"title": "Cuddalore",
+"code": "cuddalore",
+"friendly_id": "cuddalore"
+},
+{
+"title": "Dharmapuri",
+"code": "dharmapuri",
+"friendly_id": "dharmapuri"
+},
+{
+"title": "Dindigul",
+"code": "dindigul",
+"friendly_id": "dindigul"
+},
+{
+"title": "Erode",
+"code": "erode",
+"friendly_id": "erode",
+"cities": [
+{
+"title": "Erode",
+"code": "erode",
+"friendly_id": "erode"
+}
+]
+},
+{
+"title": "Kallakurichi",
+"code": "kallakurichi",
+"friendly_id": "kallakurichi"
+},
+{
+"title": "Kancheepuram",
+"code": "kancheepuram",
+"friendly_id": "kancheepuram"
+},
+{
+"title": "Kanniyakumari",
+"code": "kanniyakumari",
+"friendly_id": "kanniyakumari"
+},
+{
+"title": "Karur",
+"code": "karur",
+"friendly_id": "karur"
+},
+{
+"title": "Krishnagiri",
+"code": "krishnagiri",
+"friendly_id": "krishnagiri"
+},
+{
+"title": "Madurai",
+"code": "madurai",
+"friendly_id": "madurai",
+"cities": [
+{
+"title": "Madurai",
+"code": "madurai",
+"friendly_id": "madurai"
+}
+]
+},
+{
+"title": "Nagapattinam",
+"code": "nagapattinam",
+"friendly_id": "nagapattinam"
+},
+{
+"title": "Namakkal",
+"code": "namakkal",
+"friendly_id": "namakkal"
+},
+{
+"title": "Perambalur",
+"code": "perambalur",
+"friendly_id": "perambalur"
+},
+{
+"title": "Pudukottai",
+"code": "pudukottai",
+"friendly_id": "pudukottai"
+},
+{
+"title": "Ramanathapuram",
+"code": "ramanathapuram",
+"friendly_id": "ramanathapuram"
+},
+{
+"title": "Ranipet",
+"code": "ranipet",
+"friendly_id": "ranipet"
+},
+{
+"title": "Salem",
+"code": "salem",
+"friendly_id": "salem",
+"cities": [
+{
+"title": "Salem",
+"code": "salem",
+"friendly_id": "salem"
+}
+]
+},
+{
+"title": "Sivagangai",
+"code": "sivagangai",
+"friendly_id": "sivagangai"
+},
+{
+"title": "Tenkasi",
+"code": "tenkasi",
+"friendly_id": "tenkasi"
+},
+{
+"title": "Thanjavur",
+"code": "thanjavur",
+"friendly_id": "thanjavur"
+},
+{
+"title": "The Nilgiris",
+"code": "the-nilgiris",
+"friendly_id": "the-nilgiris"
+},
+{
+"title": "Theni",
+"code": "theni",
+"friendly_id": "theni"
+},
+{
+"title": "Thirunelveli",
+"code": "thirunelveli",
+"friendly_id": "thirunelveli",
+"cities": [
+{
+"title": "Thirunelveli",
+"code": "thirunelveli",
+"friendly_id": "thirunelveli"
+}
+]
+},
+{
+"title": "Thiruvallur",
+"code": "thiruvallur",
+"friendly_id": "thiruvallur"
+},
+{
+"title": "Thiruvannamalai",
+"code": "thiruvannamalai",
+"friendly_id": "thiruvannamalai"
+},
+{
+"title": "Thiruvarur",
+"code": "thiruvarur",
+"friendly_id": "thiruvarur"
+},
+{
+"title": "Thoothukudi",
+"code": "thoothukudi",
+"friendly_id": "thoothukudi",
+"cities": [
+{
+"title": "Thoothukudi",
+"code": "thoothukudi",
+"friendly_id": "thoothukudi"
+}
+]
+},
+{
+"title": "Tirupattur",
+"code": "tirupattur",
+"friendly_id": "tirupattur"
+},
+{
+"title": "Tiruppur",
+"code": "tiruppur",
+"friendly_id": "tiruppur",
+"cities": [
+{
+"title": "Tiruppur",
+"code": "tiruppur",
+"friendly_id": "tiruppur"
+}
+]
+},
+{
+"title": "Trichy",
+"code": "trichy",
+"friendly_id": "trichy",
+"cities": [
+{
+"title": "Trichy",
+"code": "trichy",
+"friendly_id": "trichy"
+}
+]
+},
+{
+"title": "Vellore",
+"code": "vellore",
+"friendly_id": "vellore",
+"cities": [
+{
+"title": "Vellore",
+"code": "vellore",
+"friendly_id": "vellore"
+}
+]
+},
+{
+"title": "Villupuram",
+"code": "villupuram",
+"friendly_id": "villupuram"
+},
+{
+"title": "Virudunagar",
+"code": "virudunagar",
+"friendly_id": "virudunagar"
+}
+]
+},
+{
+"title": "Telangana",
+"code": "ts",
+"friendly_id": "telangana",
+"districts": [
+{
+"title": "Adilabad",
+"code": "adilabad",
+"friendly_id": "adilabad",
+"cities": [
+{
+"title": "Adilabad",
+"code": "adilabad",
+"friendly_id": "adilabad"
+}
+]
+},
+{
+"title": "Bhadradri Kothagudem",
+"code": "bhadradri-kothagudem",
+"friendly_id": "bhadradri-kothagudem"
+},
+{
+"title": "Hyderabad",
+"code": "hyderabad",
+"friendly_id": "hyderabad"
+},
+{
+"title": "Jagtial",
+"code": "jagtial",
+"friendly_id": "jagtial"
+},
+{
+"title": "Jangaon",
+"code": "jangaon",
+"friendly_id": "jangaon"
+},
+{
+"title": "Jayashankar Bhupalapally",
+"code": "jayashankar-bhupalapally",
+"friendly_id": "jayashankar-bhupalapally"
+},
+{
+"title": "Jogulamba Gadwal",
+"code": "jogulamba-gadwal",
+"friendly_id": "jogulamba-gadwal"
+},
+{
+"title": "Kamareddy",
+"code": "kamareddy",
+"friendly_id": "kamareddy"
+},
+{
+"title": "Karimnagar",
+"code": "karimnagar",
+"friendly_id": "karimnagar",
+"cities": [
+{
+"title": "Karimnagar",
+"code": "karimnagar",
+"friendly_id": "karimnagar"
+}
+]
+},
+{
+"title": "Khammam",
+"code": "khammam",
+"friendly_id": "khammam",
+"cities": [
+{
+"title": "Khammam",
+"code": "khammam",
+"friendly_id": "khammam"
+}
+]
+},
+{
+"title": "Kumaram Bheem Asifabad",
+"code": "kumarambheem-asifabad",
+"friendly_id": "kumarambheem-asifabad"
+},
+{
+"title": "Mahabubabad",
+"code": "mahabubabad",
+"friendly_id": "mahabubabad"
+},
+{
+"title": "Mahabubnagar",
+"code": "mahabubnagar",
+"friendly_id": "mahabubnagar",
+"cities": [
+{
+"title": "Mahaboobnagar",
+"code": "mahaboobnagar",
+"friendly_id": "mahaboobnagar"
+}
+]
+},
+{
+"title": "Mancherial",
+"code": "mancherial",
+"friendly_id": "mancherial",
+"cities": [
+{
+"title": "Mancherial",
+"code": "mancherial",
+"friendly_id": "mancherial"
+}
+]
+},
+{
+"title": "Medak",
+"code": "medak",
+"friendly_id": "medak"
+},
+{
+"title": "Medchal",
+"code": "medchal",
+"friendly_id": "medchal"
+},
+{
+"title": "Mulugu",
+"code": "mulugu",
+"friendly_id": "mulugu"
+},
+{
+"title": "Nagarkurnool",
+"code": "nagarkurnool",
+"friendly_id": "nagarkurnool"
+},
+{
+"title": "Nalgonda",
+"code": "nalgonda",
+"friendly_id": "nalgonda",
+"cities": [
+{
+"title": "Nalgonda",
+"code": "nalgonda",
+"friendly_id": "nalgonda"
+}
+]
+},
+{
+"title": "Narayanapeta",
+"code": "narayanapeta",
+"friendly_id": "narayanapeta"
+},
+{
+"title": "Nirmal",
+"code": "nirmal",
+"friendly_id": "nirmal"
+},
+{
+"title": "Nizamabad",
+"code": "nizamabad",
+"friendly_id": "nizamabad",
+"cities": [
+{
+"title": "Nizamabad",
+"code": "nizamabad",
+"friendly_id": "nizamabad"
+}
+]
+},
+{
+"title": "Peddapalli",
+"code": "peddapalli",
+"friendly_id": "peddapalli",
+"cities": [
+{
+"title": "Ramagundam",
+"code": "ramagundam",
+"friendly_id": "ramagundam"
+}
+]
+},
+{
+"title": "Rajanna Sirscilla",
+"code": "rajanna-sirscilla",
+"friendly_id": "rajanna-sirscilla"
+},
+{
+"title": "Rangareddy",
+"code": "rangareddy",
+"friendly_id": "rangareddy",
+"cities": [
+{
+"title": "Hyderabad",
+"code": "hyderabad",
+"friendly_id": "hyderabad"
+}
+]
+},
+{
+"title": "Sangareddy",
+"code": "sangareddy",
+"friendly_id": "sangareddy"
+},
+{
+"title": "Siddipet",
+"code": "siddipet",
+"friendly_id": "siddipet"
+},
+{
+"title": "Suryapet",
+"code": "suryapet",
+"friendly_id": "suryapet"
+},
+{
+"title": "Vikarabad",
+"code": "vikarabad",
+"friendly_id": "vikarabad"
+},
+{
+"title": "Wanaparthy",
+"code": "wanaparthy",
+"friendly_id": "wanaparthy"
+},
+{
+"title": "Warangal(Rural)",
+"code": "warangal-rural",
+"friendly_id": "warangal-rural",
+"cities": [
+{
+"title": "Warangal",
+"code": "warangal",
+"friendly_id": "warangal-1"
+}
+]
+},
+{
+"title": "Warangal(Urban)",
+"code": "warangal-urban",
+"friendly_id": "warangal-urban"
+},
+{
+"title": "Yadadri Bhuvanagiri",
+"code": "yadadri-bhuvanagiri",
+"friendly_id": "yadadri-bhuvanagiri"
+}
+]
+},
+{
+"title": "Urdu National",
+"code": "na",
+"friendly_id": "urdu-national",
+"districts": [
+{
+"title": "other",
+"code": "other",
+"friendly_id": "other"
+}
+]
+},
+{
+"title": "Uttar Pradesh",
+"code": "up",
+"friendly_id": "uttar-pradesh",
+"districts": [
+{
+"title": "Agra",
+"code": "agra",
+"friendly_id": "agra",
+"cities": [
+{
+"title": "Firozabad",
+"code": "firozabad",
+"friendly_id": "firozabad"
+},
+{
+"title": "Agra",
+"code": "agra",
+"friendly_id": "agra"
+}
+]
+},
+{
+"title": "Aligarh",
+"code": "aligarh",
+"friendly_id": "aligarh",
+"cities": [
+{
+"title": "Aligarh",
+"code": "aligarh",
+"friendly_id": "aligarh"
+}
+]
+},
+{
+"title": "Ambedkarnagar",
+"code": "ambedkarnagar",
+"friendly_id": "ambedkarnagar"
+},
+{
+"title": "Amethi",
+"code": "amethi",
+"friendly_id": "amethi",
+"cities": [
+{
+"title": "Amethi",
+"code": "amethi",
+"friendly_id": "amethi"
+}
+]
+},
+{
+"title": "Amroha",
+"code": "amroha",
+"friendly_id": "amroha"
+},
+{
+"title": "Auraiya",
+"code": "auraiya",
+"friendly_id": "auraiya"
+},
+{
+"title": "Ayodhya",
+"code": "ayodhya",
+"friendly_id": "ayodhya"
+},
+{
+"title": "Azamgarh",
+"code": "azamgarh",
+"friendly_id": "azamgarh"
+},
+{
+"title": "Badaun",
+"code": "badaun",
+"friendly_id": "badaun"
+},
+{
+"title": "Bagpat",
+"code": "bagpat",
+"friendly_id": "bagpat"
+},
+{
+"title": "Bahraich",
+"code": "bahraich",
+"friendly_id": "bahraich"
+},
+{
+"title": "Ballia",
+"code": "ballia",
+"friendly_id": "ballia"
+},
+{
+"title": "Balrampur",
+"code": "balrampur",
+"friendly_id": "balrampur"
+},
+{
+"title": "Banda",
+"code": "banda",
+"friendly_id": "banda"
+},
+{
+"title": "Barabanki",
+"code": "barabanki",
+"friendly_id": "barabanki"
+},
+{
+"title": "Bareilly",
+"code": "bareilly",
+"friendly_id": "bareilly",
+"cities": [
+{
+"title": "Bareilly",
+"code": "bareilly",
+"friendly_id": "bareilly"
+}
+]
+},
+{
+"title": "Basti",
+"code": "basti",
+"friendly_id": "basti"
+},
+{
+"title": "Bhadohi",
+"code": "Bhadohi",
+"friendly_id": "bhadohi"
+},
+{
+"title": "Bijnor",
+"code": "bijnor",
+"friendly_id": "bijnor"
+},
+{
+"title": "Bulandshahr",
+"code": "bulandshahr",
+"friendly_id": "bulandshahr",
+"cities": [
+{
+"title": "Buland Shehar",
+"code": "buland-shehar",
+"friendly_id": "buland-shehar"
+}
+]
+},
+{
+"title": "Chandauli",
+"code": "chandauli",
+"friendly_id": "chandauli"
+},
+{
+"title": "Chitrakoot",
+"code": "chitrakoot",
+"friendly_id": "chitrakoot"
+},
+{
+"title": "Deoria",
+"code": "deoria",
+"friendly_id": "deoria"
+},
+{
+"title": "Etah",
+"code": "etah",
+"friendly_id": "etah"
+},
+{
+"title": "Etawah",
+"code": "etawah",
+"friendly_id": "etawah"
+},
+{
+"title": "Farrukhabad",
+"code": "farrukhabad",
+"friendly_id": "farrukhabad"
+},
+{
+"title": "Fatehpur",
+"code": "fatehpur",
+"friendly_id": "fatehpur"
+},
+{
+"title": "Firozabad",
+"code": "firozabad",
+"friendly_id": "firozabad"
+},
+{
+"title": "Gauthambuddh Nagar",
+"code": "gauthambuddh-nagar",
+"friendly_id": "gauthambuddh-nagar",
+"cities": [
+{
+"title": "Noida",
+"code": "noida",
+"friendly_id": "noida"
+}
+]
+},
+{
+"title": "Gaziabad",
+"code": "gaziabad",
+"friendly_id": "gaziabad",
+"cities": [
+{
+"title": "Ghaziabad",
+"code": "ghaziabad",
+"friendly_id": "ghaziabad"
+},
+{
+"title": "Loni",
+"code": "loni",
+"friendly_id": "loni"
+}
+]
+},
+{
+"title": "Ghazipur",
+"code": "ghazipur",
+"friendly_id": "ghazipur"
+},
+{
+"title": "Gonda",
+"code": "gonda",
+"friendly_id": "gonda"
+},
+{
+"title": "Gorakhpur",
+"code": "gorakhpur",
+"friendly_id": "gorakhpur",
+"cities": [
+{
+"title": "Gorakhpur",
+"code": "gorakhpur",
+"friendly_id": "gorakhpur"
+}
+]
+},
+{
+"title": "Hamirpur",
+"code": "hamirpur",
+"friendly_id": "hamirpur"
+},
+{
+"title": "Hapur",
+"code": "hapur",
+"friendly_id": "hapur"
+},
+{
+"title": "Hardoi",
+"code": "hardoi",
+"friendly_id": "hardoi"
+},
+{
+"title": "Hathras",
+"code": "hathras",
+"friendly_id": "hathras"
+},
+{
+"title": "Jalaun",
+"code": "jalaun",
+"friendly_id": "jalaun"
+},
+{
+"title": "Jaunpur",
+"code": "jaunpur",
+"friendly_id": "jaunpur"
+},
+{
+"title": "Jhansi",
+"code": "jhansi",
+"friendly_id": "jhansi",
+"cities": [
+{
+"title": "Jhansi",
+"code": "jhansi",
+"friendly_id": "jhansi"
+}
+]
+},
+{
+"title": "Kannauj",
+"code": "kannauj",
+"friendly_id": "kannauj"
+},
+{
+"title": "Kanpur",
+"code": "kanpur",
+"friendly_id": "kanpur",
+"cities": [
+{
+"title": "Kanpur",
+"code": "kanpur",
+"friendly_id": "kanpur"
+}
+]
+},
+{
+"title": "Kanpur Dehat",
+"code": "kanpur-dehat",
+"friendly_id": "kanpur-dehat",
+"cities": [
+{
+"title": "Kanpur Dehat",
+"code": "kanpur-dehat",
+"friendly_id": "kanpur-dehat"
+}
+]
+},
+{
+"title": "Kasganj",
+"code": "kasganj",
+"friendly_id": "kasganj"
+},
+{
+"title": "Kaushambi",
+"code": "kaushambi",
+"friendly_id": "kaushambi"
+},
+{
+"title": "Kushinagar",
+"code": "kushinagar",
+"friendly_id": "kushinagar"
+},
+{
+"title": "Lakhimpur Kheri",
+"code": "lakhimpur-kheri",
+"friendly_id": "lakhimpur-kheri"
+},
+{
+"title": "Lalitpur",
+"code": "lalitpur",
+"friendly_id": "lalitpur"
+},
+{
+"title": "Lucknow",
+"code": "lucknow",
+"friendly_id": "lucknow",
+"cities": [
+{
+"title": "Lucknow",
+"code": "lucknow",
+"friendly_id": "lucknow"
+}
+]
+},
+{
+"title": "Maharajganj",
+"code": "maharajganj",
+"friendly_id": "maharajganj"
+},
+{
+"title": "Mahoba",
+"code": "mahoba",
+"friendly_id": "mahoba"
+},
+{
+"title": "Mainpuri",
+"code": "mainpuri",
+"friendly_id": "mainpuri"
+},
+{
+"title": "Mathura",
+"code": "mathura",
+"friendly_id": "mathura",
+"cities": [
+{
+"title": "Mathura",
+"code": "mathura",
+"friendly_id": "mathura"
+}
+]
+},
+{
+"title": "Mau",
+"code": "mau",
+"friendly_id": "mau"
+},
+{
+"title": "Meerut",
+"code": "meerut",
+"friendly_id": "meerut",
+"cities": [
+{
+"title": "Meerut",
+"code": "meerut",
+"friendly_id": "meerut"
+}
+]
+},
+{
+"title": "Mirzapur",
+"code": "mirzapur",
+"friendly_id": "mirzapur"
+},
+{
+"title": "Moradabad",
+"code": "moradabad",
+"friendly_id": "moradabad",
+"cities": [
+{
+"title": "Moradabad",
+"code": "moradabad",
+"friendly_id": "moradabad"
+}
+]
+},
+{
+"title": "Mughal Sarai",
+"code": "mughal-sarai",
+"friendly_id": "mughal-sarai"
+},
+{
+"title": "Muzaffarnagar",
+"code": "muzaffarnagar",
+"friendly_id": "muzaffarnagar",
+"cities": [
+{
+"title": "Muzaffarnagar",
+"code": "muzaffarnagar",
+"friendly_id": "muzaffarnagar"
+}
+]
+},
+{
+"title": "Pilibhit",
+"code": "pilibhit",
+"friendly_id": "pilibhit"
+},
+{
+"title": "Pratapgarh",
+"code": "pratapgarh",
+"friendly_id": "pratapgarh"
+},
+{
+"title": "Prayagraj",
+"code": "allahabad",
+"friendly_id": "prayagraj",
+"cities": [
+{
+"title": "Allahabad",
+"code": "allahabad",
+"friendly_id": "allahabad"
+}
+]
+},
+{
+"title": "Raebareli",
+"code": "raebareli",
+"friendly_id": "raebareli"
+},
+{
+"title": "Rampur",
+"code": "rampur",
+"friendly_id": "rampur"
+},
+{
+"title": "Saharanpur",
+"code": "saharanpur",
+"friendly_id": "saharanpur",
+"cities": [
+{
+"title": "Saharanpur",
+"code": "saharanpur",
+"friendly_id": "saharanpur"
+}
+]
+},
+{
+"title": "Sambhal",
+"code": "sambhal",
+"friendly_id": "sambhal"
+},
+{
+"title": "Sant Kabir Nagar",
+"code": "sant-kabir-nagar",
+"friendly_id": "sant-kabir-nagar"
+},
+{
+"title": "Sant Ravidas Nagar",
+"code": "sant-ravidas-nagar",
+"friendly_id": "sant-ravidas-nagar"
+},
+{
+"title": "Shahjahanpur",
+"code": "shahjahanpur",
+"friendly_id": "shahjahanpur"
+},
+{
+"title": "Shamli",
+"code": "shamli",
+"friendly_id": "shamli"
+},
+{
+"title": "Shravasti",
+"code": "shravasti",
+"friendly_id": "shravasti"
+},
+{
+"title": "Shravasti",
+"code": "shravasti",
+"friendly_id": "shravasti"
+},
+{
+"title": "Siddharthnagar",
+"code": "siddharthnagar",
+"friendly_id": "siddharthnagar"
+},
+{
+"title": "Sitapur",
+"code": "sitapur",
+"friendly_id": "sitapur"
+},
+{
+"title": "Sonbhadra",
+"code": "sonbhadra",
+"friendly_id": "sonbhadra"
+},
+{
+"title": "Sultanpur",
+"code": "sultanpur",
+"friendly_id": "sultanpur"
+},
+{
+"title": "Unnao",
+"code": "unnao",
+"friendly_id": "unnao"
+},
+{
+"title": "Varanasi",
+"code": "varanasi",
+"friendly_id": "varanasi",
+"cities": [
+{
+"title": "Varanasi",
+"code": "varanasi",
+"friendly_id": "varanasi"
+}
+]
+}
+]
+},
+{
+"title": "Uttarakhand",
+"code": "uttarakhand",
+"friendly_id": "uttarakhand",
+"districts": [
+{
+"title": "Almora",
+"code": "almora",
+"friendly_id": "almora"
+},
+{
+"title": "Bageswar",
+"code": "bageswar",
+"friendly_id": "bageswar"
+},
+{
+"title": "Chamoli",
+"code": "chamoli",
+"friendly_id": "chamoli"
+},
+{
+"title": "Champawat",
+"code": "champawat",
+"friendly_id": "champawat"
+},
+{
+"title": "Dehradun",
+"code": "dehradun",
+"friendly_id": "dehradun",
+"cities": [
+{
+"title": "Dehradun",
+"code": "dehradun",
+"friendly_id": "dehradun"
+},
+{
+"title": "Mussoorie",
+"code": "mussoorie",
+"friendly_id": "mussoorie"
+},
+{
+"title": "Rishikesh",
+"code": "rishikesh",
+"friendly_id": "rishikesh"
+}
+]
+},
+{
+"title": "Haridwar",
+"code": "haridwar",
+"friendly_id": "haridwar",
+"cities": [
+{
+"title": "Haridwar",
+"code": "haridwar",
+"friendly_id": "haridwar"
+},
+{
+"title": "Roorkee",
+"code": "roorkee",
+"friendly_id": "roorkee"
+}
+]
+},
+{
+"title": "Nainital",
+"code": "nainital",
+"friendly_id": "nainital",
+"cities": [
+{
+"title": "Haldwani",
+"code": "haldwani",
+"friendly_id": "haldwani"
+},
+{
+"title": "Nainital",
+"code": "nainital",
+"friendly_id": "nainital"
+},
+{
+"title": "Ramnagar",
+"code": "ramnagar",
+"friendly_id": "ramnagar"
+}
+]
+},
+{
+"title": "Pauri Garhwal",
+"code": "pauri-garhwal",
+"friendly_id": "pauri-garhwal"
+},
+{
+"title": "Pithoragarh",
+"code": "pithoragarh",
+"friendly_id": "pithoragarh",
+"cities": [
+{
+"title": "Pithoragarh",
+"code": "pithoragarh",
+"friendly_id": "pithoragarh"
+}
+]
+},
+{
+"title": "Rudraprayag",
+"code": "rudraprayag",
+"friendly_id": "rudraprayag"
+},
+{
+"title": "Tehri Garhwal",
+"code": "tehri-garhwal",
+"friendly_id": "tehri-garhwal"
+},
+{
+"title": "Udham Singh Nagar",
+"code": "udham-singh-nagar",
+"friendly_id": "udham-singh-nagar",
+"cities": [
+{
+"title": "Jaspur",
+"code": "jaspur",
+"friendly_id": "jaspur"
+},
+{
+"title": "Kashipur",
+"code": "kashipur",
+"friendly_id": "kashipur"
+}
+]
+},
+{
+"title": "Uttarkashi",
+"code": "uttarkashi",
+"friendly_id": "uttarkashi",
+"cities": [
+{
+"title": "Rudrapur",
+"code": "rudrapur",
+"friendly_id": "rudrapur"
+}
+]
+}
+]
+},
+{
+"title": "West Bengal",
+"code": "wb",
+"friendly_id": "west-bengal",
+"districts": [
+{
+"title": "Alipurduar",
+"code": "alipurduar",
+"friendly_id": "alipurduar"
+},
+{
+"title": "Bankura",
+"code": "bankura",
+"friendly_id": "bankura"
+},
+{
+"title": "Birbhum",
+"code": "birbhum",
+"friendly_id": "birbhum"
+},
+{
+"title": "Coochbehar",
+"code": "coochbehar",
+"friendly_id": "coochbehar"
+},
+{
+"title": "Dakshin 24 Parganas",
+"code": "dakshin-24-parganas",
+"friendly_id": "dakshin-24-parganas"
+},
+{
+"title": "Dakshin Dinajpur",
+"code": "dakshin-dinajpur",
+"friendly_id": "dakshin-dinajpur"
+},
+{
+"title": "Darjeeling",
+"code": "darjeeling",
+"friendly_id": "darjeeling",
+"cities": [
+{
+"title": "Siliguri",
+"code": "siliguri",
+"friendly_id": "siliguri"
+}
+]
+},
+{
+"title": "Hooghly",
+"code": "hooghly",
+"friendly_id": "hooghly"
+},
+{
+"title": "Howrah",
+"code": "howrah",
+"friendly_id": "howrah",
+"cities": [
+{
+"title": "Howrah",
+"code": "howrah",
+"friendly_id": "howrah"
+}
+]
+},
+{
+"title": "Jalpaiguri",
+"code": "jalpaiguri",
+"friendly_id": "jalpaiguri"
+},
+{
+"title": "Jhargram",
+"code": "jhargram",
+"friendly_id": "jhargram"
+},
+{
+"title": "Kalimpong",
+"code": "kalimpong",
+"friendly_id": "kalimpong"
+},
+{
+"title": "Kolkata",
+"code": "kolkata",
+"friendly_id": "kolkata",
+"cities": [
+{
+"title": "Kolkata",
+"code": "kolkata",
+"friendly_id": "kolkata"
+}
+]
+},
+{
+"title": "Malda",
+"code": "malda",
+"friendly_id": "malda",
+"cities": [
+{
+"title": "Malda",
+"code": "malda",
+"friendly_id": "malda"
+}
+]
+},
+{
+"title": "Murshidabad",
+"code": "murshidabad",
+"friendly_id": "murshidabad",
+"cities": [
+{
+"title": "Baharampur",
+"code": "baharampur",
+"friendly_id": "baharampur"
+}
+]
+},
+{
+"title": "Nadia",
+"code": "nadia",
+"friendly_id": "nadia"
+},
+{
+"title": "Paschim Bardhaman",
+"code": "paschim-bardhaman",
+"friendly_id": "paschim-bardhaman",
+"cities": [
+{
+"title": "Asansol",
+"code": "asansol",
+"friendly_id": "asansol"
+},
+{
+"title": "Durgapur",
+"code": "durgapur",
+"friendly_id": "durgapur"
+}
+]
+},
+{
+"title": "Paschim Medinipur",
+"code": "paschim-medinipur",
+"friendly_id": "paschim-medinipur",
+"cities": [
+{
+"title": "Kharagpur",
+"code": "kharagpur",
+"friendly_id": "kharagpur"
+}
+]
+},
+{
+"title": "Purba Bardhaman",
+"code": "purba-bardhaman",
+"friendly_id": "purba-bardhaman",
+"cities": [
+{
+"title": "Bardhaman",
+"code": "bardhaman",
+"friendly_id": "bardhaman"
+}
+]
+},
+{
+"title": "Purba Medinipur",
+"code": "purba-medinipur",
+"friendly_id": "purba-medinipur"
+},
+{
+"title": "Purulia",
+"code": "purulia",
+"friendly_id": "purulia"
+},
+{
+"title": "Uttar 24 Parganas",
+"code": "uttar-24-parganas",
+"friendly_id": "uttar-24-parganas",
+"cities": [
+{
+"title": "Habra",
+"code": "habra",
+"friendly_id": "habra"
+}
+]
+},
+{
+"title": "Uttar Dinajpur",
+"code": "uttar-dinajpur",
+"friendly_id": "uttar-dinajpur"
+}
+]
+}
+]
+}
+]
+}

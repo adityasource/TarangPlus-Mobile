@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg"
+    android:clickable="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/normal_toolbar" />
+
+    <include
+        layout="@layout/error_no_data_layout"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/vidgyor_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/player_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_200"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.saranyu.ott.instaplaysdk.InstaPlayView
+                android:id="@+id/instaplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:contentDescription="@string/content_des"
+                android:scaleType="centerCrop"
+                android:src="@drawable/place_holder_16x9" />
+
+            <ImageView
+                android:id="@+id/play_icon"
+                android:layout_width="@dimen/px_40"
+                android:layout_height="@dimen/px_40"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_play_circle"
+                tools:tint="@color/dark_grey" />
+
+            <ImageView
+                android:id="@+id/premium"
+                android:layout_width="@dimen/px_54"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_5"
+                android:layout_marginTop="@dimen/px_3"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_des"
+                android:visibility="gone"
+                app:srcCompat="@drawable/premium_rec"
+                tools:visibility="visible" />
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/livecount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/px_2"
+                android:layout_marginRight="@dimen/px_5"
+                android:drawableLeft="@drawable/ic_eye"
+                android:drawablePadding="@dimen/px_5"
+                android:gravity="center_vertical"
+                android:paddingTop="-1dp"
+                android:text="100"
+                android:textColor="@color/profile_txt_grey"
+                android:textSize="@dimen/pt_11"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/player_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/player_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/px_16"
+                    android:src="@drawable/ic_back" />
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/player_title_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/pt_12"
+                    app:fontName="@string/font_sans_semi_bold"
+                    tools:text="@string/lorem" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/vid_relative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_200"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.exoplayer2.ui.PlayerView
+                        android:id="@+id/vid_player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/black"
+                        android:keepScreenOn="true"
+                        app:controller_layout_id="@layout/vidgyor_exo_playback_control_view"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:use_controller="true" />
+
+
+                </FrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--         <com.google.android.exoplayer2.ui.PlayerView
+                         android:id="@+id/player_view"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:background="@color/black"
+                         android:visibility="visible"
+                         app:controller_layout_id="@layout/vidgyor_exo_playback_control_view"
+                         app:layout_constraintEnd_toEndOf="parent"
+                         app:layout_constraintStart_toStartOf="parent"
+                         app:layout_constraintTop_toTopOf="parent" />-->
+
+            <ImageView
+                android:id="@+id/vid_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:contentDescription="@string/content_des"
+                android:scaleType="centerCrop"
+                android:src="@drawable/place_holder_16x9" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_20"
+                android:layout_marginEnd="@dimen/px_15"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/pt_20"
+                app:fontsName="@string/font_sans_semi_bold"
+                tools:text="Zaban Samal Ke" />
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/view_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_marginEnd="@dimen/px_15"
+                android:layout_marginBottom="@dimen/px_0"
+                android:letterSpacing="@dimen/letter_spacing_1"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/pt_12"
+                android:visibility="gone"
+                app:fontsName="@string/font_sans_semi_bold"
+                tools:text="1000 watching Now" />
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/meta_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_10"
+                android:layout_marginEnd="@dimen/px_15"
+                android:layout_marginBottom="@dimen/px_0"
+                android:letterSpacing="@dimen/letter_spacing_1"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/pt_12"
+                app:fontsName="@string/font_sans_semi_bold"
+                tools:text="Thriller | Hindi | 1984 | UA " />
+
+            <LinearLayout
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_15"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/px_5">
+
+                <ImageView
+                    android:layout_width="@dimen/px_20"
+                    android:layout_height="@dimen/px_22"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_des"
+                    android:src="@drawable/ic_btn_share" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    style="@style/details_btn_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/share" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/downArrowHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_14"
+                android:layout_marginEnd="@dimen/px_15"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.otl.tarangplus.customeUI.GradientTextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/px_3"
+                        android:maxLines="2"
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/pt_12"
+                        app:fontsName="@string/font_sans_regular"
+                        tools:text="Super comedy show, which is very hurtkljlkjkjlasdf lkjkljasdf lkjklsdf lkjlkjasdf lkjlkasdjflk  asdlkfjlkj sasdfjlkj lkasjdf " />
+
+
+                    <TextView
+                        android:id="@+id/gradient_shadow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_grey_txt_for_white"
+                        android:lines="2" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/meta_data_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_8"
+                    android:layout_marginBottom="@dimen/px_13"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/downArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:contentDescription="@string/image_content"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_dropdown" />
+            </LinearLayout>
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/play_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/px_15"
+                android:layout_marginTop="@dimen/px_17"
+                android:layout_marginEnd="@dimen/px_15"
+                android:layout_marginBottom="@dimen/px_11"
+                android:text="Playing Next"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/pt_18"
+                android:visibility="gone"
+                app:fontsName="@string/font_sans_semi_bold"
+                tools:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/play_next_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_20"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/px_16"
+                android:paddingEnd="@dimen/px_16"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <RelativeLayout
+                android:id="@+id/coming_soon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_100"
+                android:visibility="gone">
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/comming_soon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/comming_soon"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/pt_20" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/others_parent_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splash_screen_bg"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/ic_next_black"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/px_15"
+                    android:paddingTop="@dimen/px_10"
+                    android:paddingEnd="@dimen/px_15"
+                    android:paddingBottom="@dimen/px_10"
+                    android:text="@string/other_channels"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/pt_18"
+                    app:fontsName="@string/font_sans_semi_bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/other_channels_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/px_19"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    android:paddingStart="@dimen/px_16"
+                    android:paddingEnd="@dimen/px_16" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

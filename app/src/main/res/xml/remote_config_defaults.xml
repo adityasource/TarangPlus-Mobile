@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>current_version</key>
+        <value>13</value>
+    </entry>
+    <entry>
+        <key>update_required</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>current_version_url</key>
+        <value>https://play.google.com/store/apps/details?id=com.otl.tarangplus</value>
+    </entry>
+</defaultsMap>

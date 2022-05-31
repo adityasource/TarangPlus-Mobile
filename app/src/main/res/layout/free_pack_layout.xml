@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/pt_20"
+            app:fontName="@string/font_sans_semi_bold"
+            tool:text="Welcome Soumya!" />
+
+        <ImageView
+            android:id="@+id/suc_img"
+            android:layout_width="@dimen/px_100"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_32"
+            android:adjustViewBounds="true"
+            android:src="@drawable/welcome_icon_reel"
+           />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/txt_des"
+            tool:text="@string/free_pack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suc_img"
+            android:layout_marginRight="@dimen/px_12"
+            android:layout_marginLeft="@dimen/px_12"
+            android:layout_marginTop="@dimen/px_12"
+            android:gravity="center"
+            android:textColor="@color/txt_grey_66"
+            android:textSize="@dimen/pt_16"
+            app:fontName="@string/font_sans_regular" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/confirm"
+            style="@style/rounded_gradient_btn"
+            android:text="@string/proceed" />
+
+    </LinearLayout>
+</RelativeLayout>

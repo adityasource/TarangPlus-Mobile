@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="false">
+    <!--    app:cardCornerRadius="@dimen/px_3"
+        app:cardElevation="@dimen/px_1"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image_catalog_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_des"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder_16x9" />
+
+
+        <ImageView
+            android:id="@+id/play_icon_in_landScape"
+            android:layout_width="@dimen/px_50"
+            android:layout_height="@dimen/px_50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/premium"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_tag_height"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_des"
+            app:srcCompat="@drawable/premium_rec" />
+
+        <ImageView
+            android:id="@+id/live_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/px_tag_height"
+            android:layout_gravity="end"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:contentDescription="@string/content_des"
+            app:srcCompat="@drawable/live_tag_right" />
+
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

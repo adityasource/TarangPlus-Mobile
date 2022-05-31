@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="insta_cast_mini_controller_control_buttons">
+        <item>@id/cast_button_type_empty</item>
+        <item>@id/cast_button_type_play_pause_toggle</item>
+        <item>@id/cast_button_type_forward_30_seconds</item>
+    </array>
+    <color name="instaAccent">#00BCD4</color>
+    <color name="instaColorAccent">#CFD8DC</color>
+    <color name="instaColorDisable">#CCCCCC</color>
+    <color name="instaColorDivider">#1f000000</color>
+    <color name="instaColorPrimary">#607D8B</color>
+    <color name="instaColorPrimaryDark">#455A64</color>
+    <color name="instaColorPrimaryText">#463c34</color>
+    <color name="instaColorWhite">#FFFFFF</color>
+    <color name="instaIcons">#FFFFFF</color>
+    <color name="instaPrimary_text">#212121</color>
+    <color name="instaSecondary_text">#757575</color>
+    <color name="insta_divider">#BDBDBD</color>
+    <color name="insta_red">#840D19</color>
+    <color name="insta_unselected_btn">#8c8c8c</color>
+    <color name="line_color">#FF9800</color>
+    <dimen name="notification_action_height">48dp</dimen>
+    <dimen name="notification_action_padding">8dp</dimen>
+    <dimen name="notification_action_width">48dp</dimen>
+    <dimen name="notification_big_icon_height">64dp</dimen>
+    <dimen name="notification_big_icon_width">64dp</dimen>
+    <dimen name="notification_expanded_button_height">48dp</dimen>
+    <dimen name="notification_expanded_button_padding">10dp</dimen>
+    <dimen name="notification_expanded_buttons_divider_padding">12dp</dimen>
+    <dimen name="notification_expanded_collapse_padding">8dp</dimen>
+    <dimen name="notification_expanded_content_padding_top">8dp</dimen>
+    <dimen name="notification_expanded_height">128dp</dimen>
+    <dimen name="notification_info_container_padding_bottom">4dp</dimen>
+    <dimen name="notification_info_container_padding_left">8dp</dimen>
+    <dimen name="player_bottom_bar_height">32dp</dimen>
+    <dimen name="player_horizontal_margin">16dp</dimen>
+    <dimen name="player_play_pause_button_size">48dp</dimen>
+    <dimen name="player_rewind_upnext_button_size">32dp</dimen>
+    <dimen name="player_rewind_upnext_side_margin">16dp</dimen>
+    <dimen name="player_seekbar_container_margin_bottom">16dp</dimen>
+    <string name="INSTA_CONTEXT_ERROR">AppCompatActivity required</string>
+    <string name="INSTA_EXPIRED_LICENSE">license key is expired</string>
+    <string name="INSTA_FOUCS_ERROR">Dint Receive Audio Focus</string>
+    <string name="INSTA_INVALID_LICENSE">Invalid License</string>
+    <string name="INSTA_INVALID_RESPONSE">Validation Error , Check Key/Access Token</string>
+    <string name="INSTA_LICENSE_NOT_FOUND">license key not found in manifest</string>
+    <string name="INSTA_NULL_VALUE">Null Pointer for License</string>
+    <string name="INSTA_SERVICE_CONNECTING">Service Connecting</string>
+    <string name="INSTA_UNDEFINED">undefined error</string>
+    <string name="INSTA_VALIDATING">Validating</string>
+    <string name="INSTA_VALID_LICENSE">Valid License</string>
+    <string name="insta_action_settings">Settings</string>
+    <string name="insta_app_name">InstaPlaySDK</string>
+    <string name="insta_download_start_error">Failed to start download</string>
+    <string name="insta_live_indicator_text">LIVE</string>
+    <string name="insta_media_route_menu_title">Play on…</string>
+    <string name="insta_track_selection_title">Select tracks</string>
+    <style name="InstaAlertDialogCustom" parent="Theme.AppCompat.DayNight.Dialog">
+
+    </style>
+    <style name="LicenseKey">
+        <item name="android:text">JMEg4Hyo0YxWTZoCIT9FatG2YSkUujArXjgECgk6fUv2kuvjiwPkdQUDszzN%0AD5uS0e0ewmLsyUIcAvRB4OY8nA==%0A</item>
+    </style>
+    <style name="LicenseToken">
+        <item name="android:text">xttqeMn2dYtthp8aaUr2</item>
+    </style>
+    <style name="MyCustomStyle">
+        <item name="android:text">DHssJJnAPJu0jbql.LPps1gTMf60nZUu0</item>
+    </style>
+    <style name="NotificationAction">
+        <item name="android:layout_width">@dimen/notification_action_width</item>
+        <item name="android:layout_height">@dimen/notification_action_height</item>
+        <item name="android:gravity">center|right</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/notification_action_padding</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+    <style name="NotificationAction.Collapse" parent="@style/NotificationAction">
+    </style>
+    <style name="NotificationAction.Next" parent="@style/NotificationAction">
+    </style>
+    <style name="NotificationAction.Play" parent="@style/NotificationAction">
+    </style>
+    <style name="NotificationAction.Previous" parent="@style/NotificationAction">
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="NotificationText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:color">#ffffff</item>
+    </style>
+    <style name="Theme.CastVideosDark" parent="Theme.AppCompat.NoActionBar">
+    </style>
+    <style name="TrackSelectionDialogThemeOverlay" parent="ThemeOverlay.AppCompat.DayNight">
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="packageName">
+        <item name="android:text">com.etvwin.mobile</item>
+    </style>
+    <declare-styleable name="InstaSeekBar">
+        <!--<attr name="dots_positions" format="reference"/>-->
+        <attr format="reference" name="dots_drawable"/>
+        <attr format="integer" name="marker_width"/>
+        <attr format="color" name="marker_color"/>
+    </declare-styleable>
+    <declare-styleable name="InstaplayImageView">
+        <attr format="string" name="enterFullScreenTag"/>
+        <attr format="string" name="exitFullScreenTag"/>
+        <attr format="string" name="playTag"/>
+        <attr format="string" name="pauseTag"/>
+        <attr format="string" name="castPauseTag"/>
+        <attr format="string" name="castPlayTag"/>
+        <attr format="reference" name="muteTag"/>
+        <attr format="reference" name="unMuteTag"/>
+        <attr format="reference" name="liveTag"/>
+        <attr format="reference" name="nonLiveTag"/>
+    </declare-styleable>
+    <declare-styleable name="TabLayout">
+        <attr name="tabGravity">
+            <enum name="fill" value="0"/>
+            <enum name="center" value="1"/>
+        </attr>
+
+        <attr name="tabMode">
+            <enum name="scrollable" value="0"/>
+            <enum name="fixed" value="1"/>
+            <enum name="auto" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

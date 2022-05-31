@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.otl.tarangplus.fragments.AccountDetailsFragment">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/px_40"
+        android:layout_below="@id/app_bar_layout"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/other_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                app:hintTextAppearance="@style/text_input_layout">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/name"
+                    style="@style/me_edit_txt"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="50" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile_number_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/mobile_number"
+                app:hintTextAppearance="@style/text_input_layout">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/mobile_number"
+                    style="@style/me_edit_txt"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/email_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/email">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/email_id"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/address">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/address_txt"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/city"
+                android:visibility="gone">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/city_txt"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/state">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/state_txt"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/country_name">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/country_text"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/birth_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_15"
+                android:hint="@string/date_of_birth"
+                app:hintTextAppearance="@style/text_input_layout">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/birth_date"
+                    style="@style/me_edit_txt"
+                    android:drawableStart="@null"
+                    android:focusable="false"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="50" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/confirm"
+                style="@style/rounded_gradient_btn"
+                android:gravity="center"
+                android:text="@string/done"
+                android:layout_marginBottom="150dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

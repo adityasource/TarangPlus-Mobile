@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg"
+    android:orientation="vertical">
+
+
+    <!-- TODO: Logo and close icon -->
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/app_bar_layout"
+            layout="@layout/normal_toolbar_new" />
+
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_bar_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Login"
+            android:textColor="@color/txt_color"
+            android:textSize="25dp"
+            app:fontName="@string/font_sans_semi_bold" />
+
+    </RelativeLayout>
+
+
+
+
+    <!-- TODO : For Email and Mobile Switching-->
+
+    <RelativeLayout
+        android:id="@+id/relative_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout1"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_5"
+            android:text="@string/email"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/px_15"
+            app:fontName="@string/font_sans_regular"
+
+
+            />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_5"
+            android:layout_toRightOf="@+id/email"
+            android:text="Mobile"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/px_15"
+            app:fontName="@string/font_sans_regular"
+
+            />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/px_15"
+            android:layout_marginRight="@dimen/px_5"
+            android:layout_toRightOf="@+id/email"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+
+
+
+<!-- TODO: Email and Password EditText       -->
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/relative_layout2">
+
+
+
+         <LinearLayout
+
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+
+             <EditText
+                 android:layout_width="1dp"
+                 android:layout_height="1dp"
+                 android:background="@null"
+                 android:focusable="true"
+                 android:visibility="visible"
+                 tools:text="dummy for focus" />
+
+             <com.otl.tarangplus.customeUI.MyTextView
+                 android:id="@+id/error_message"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/px_20"
+                 android:layout_marginTop="@dimen/px_15"
+                 android:layout_marginEnd="@dimen/pt_20"
+                 android:background="@drawable/error_txt_background"
+                 android:gravity="center"
+                 android:paddingTop="@dimen/px_11"
+                 android:paddingBottom="@dimen/px_11"
+                 android:singleLine="true"
+                 android:textColor="@color/error_txt_red"
+                 android:textSize="@dimen/pt_11"
+                 android:visibility="gone"
+                 app:fontName="@string/font_sans_regular"
+                 tools:text="invalid credentials, Please try again."
+                 tools:visibility="gone" />
+
+
+              <RelativeLayout
+                 android:id="@+id/otherLoginContainer"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/px_40"
+                 android:layout_marginTop="@dimen/px_30"
+                 android:layout_marginEnd="@dimen/px_40"
+                 android:visibility="visible"
+                 tools:visibility="visible">
+
+                 <com.google.android.material.textfield.TextInputLayout
+                     android:id="@+id/email_id_text_input"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:hint="@string/email_id"
+                     app:hintTextAppearance="@style/text_input_layout">
+
+                     <com.otl.tarangplus.customeUI.MyEditText
+                         android:id="@+id/email_id"
+                         style="@style/me_edit_txt"
+                         android:digits="0123456789.qwertyuioplkjhgfdsazxcvbnmASDFGHJKLMNBVCXZQWERTYUIOP@!@#$%^*()_{}[]"
+                         android:drawableStart="@color/transparent"
+                         android:drawablePadding="@dimen/px_0"
+                         android:imeOptions="actionNext"
+                         android:inputType="textEmailAddress"
+                         android:paddingStart="@dimen/px_5"
+                         app:backgroundTint="@color/txt_grey" />
+                 </com.google.android.material.textfield.TextInputLayout>
+
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/email_id_text_input"
+                     android:layout_marginTop="@dimen/px_7">
+
+                     <com.otl.tarangplus.customeUI.MyTextHintView
+                         android:id="@+id/other_contry_password_text_input"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:hint="@string/password"
+                         app:fontName="@string/font_sans_regular"
+                         app:hintTextAppearance="@style/text_input_layout"
+                         app:passwordToggleDrawable="@drawable/ic_show_password"
+                         app:passwordToggleEnabled="true">
+
+                         <com.otl.tarangplus.customeUI.MyEditText
+                             android:id="@+id/other_contry_password"
+                             style="@style/me_edit_txt"
+                             android:drawableStart="@color/transparent"
+                             android:drawablePadding="@dimen/px_0"
+                             android:imeOptions="actionDone"
+                             android:inputType="textPassword"
+                             android:paddingStart="@dimen/px_5"
+                             android:paddingEnd="@dimen/px_neg_password" />
+                     </com.otl.tarangplus.customeUI.MyTextHintView>
+
+                 </RelativeLayout>
+
+             </RelativeLayout>
+
+          <com.otl.tarangplus.customeUI.GradientTextView
+                 android:id="@+id/login_btn"
+                 style="@style/rounded_gradient_btn"
+                 android:layout_marginTop="@dimen/px_28"
+                 android:text="@string/login" />
+
+             <com.otl.tarangplus.customeUI.GradientTextView
+                 android:id="@+id/forgot_pwd"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:layout_marginTop="@dimen/px_28"
+                 android:gravity="center"
+                 android:text="@string/forgot_pwd"
+                 android:textColor="@color/color_orange"
+                 android:textSize="@dimen/pt_11"
+                 app:fontsName="@string/font_sans_semi_bold" />
+
+             <RelativeLayout
+                 android:id="@+id/parent"
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/px_55"
+                 android:layout_gravity="bottom"
+                 android:gravity="bottom|center">
+
+                 <com.otl.tarangplus.customeUI.GradientTextView
+                     android:id="@+id/not_a_member_txt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="center"
+                     android:paddingTop="@dimen/px_5"
+                     android:paddingBottom="@dimen/px_5"
+                     android:text="@string/not_a_member"
+                     android:textColor="@color/txt_grey_66"
+                     android:textSize="@dimen/pt_11"
+                     app:fontsName="@string/font_sans_semi_bold" />
+
+                 <com.otl.tarangplus.customeUI.GradientTextView
+                     android:id="@+id/register"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toEndOf="@+id/not_a_member_txt"
+                     android:gravity="center"
+                     android:paddingStart="@dimen/px_3"
+                     android:paddingTop="@dimen/px_5"
+                     android:paddingEnd="@dimen/px_3"
+                     android:paddingBottom="@dimen/px_5"
+                     android:text="@string/register"
+                     android:textAllCaps="true"
+                     android:textColor="@color/color_orange"
+                     android:textSize="@dimen/pt_11"
+                     app:fontsName="@string/font_sans_medium" />
+             </RelativeLayout>
+
+
+
+         </LinearLayout>
+
+
+     </RelativeLayout>
+
+
+</RelativeLayout>

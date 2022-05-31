@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/px_20"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp">
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/subscribe_now"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pt_16"
+        app:fontName="@string/font_sans_semi_bold" />
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/popup_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/pt_14"
+        app:fontName="@string/font_sans_regular"
+        tools:text="Subscribe Now Subscribe NowSubscribe NowSubscribe NowSubscribe Now Subscribe Now Subscribe Now" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_28"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/popup_negetive_button"
+            style="@style/rounded_gradient_btn"
+            android:layout_marginTop="@dimen/px_0"
+            android:background="@drawable/rounded_btn_corner_unselected"
+            android:visibility="visible"
+            tools:text="Cancel" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/popup_positive_button"
+            style="@style/rounded_gradient_btn"
+            android:layout_marginStart="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_0"
+            android:text="@string/proceed"
+
+            />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/loginbut"
+            style="@style/rounded_gradient_btn"
+            android:layout_marginStart="@dimen/px_10"
+            android:layout_marginTop="@dimen/px_0"
+            android:text="@string/login" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/already_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_20"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/down_already_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/px_10"
+                android:paddingBottom="@dimen/px_10"
+                android:text="@string/other_message"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/pt_11"
+                android:textStyle="bold"
+                app:fontName="@string/font_sans_semi_bold" />
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/other_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/down_already_text"
+                android:padding="@dimen/px_10"
+                android:text="LOGIN"
+                android:textColor="@color/color_forgot_pwd"
+                android:textSize="@dimen/pt_11"
+                android:textStyle="bold"
+                app:fontName="@string/font_sans_semi_bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

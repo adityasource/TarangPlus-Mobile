@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_15"
+        android:background="@drawable/gradient_background" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/app_version_txt"
+        android:layout_below="@+id/status_bar_view"
+        android:background="@color/splash_screen_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/non_logged_in_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/px_16"
+            android:orientation="vertical">
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/login"
+                style="@style/account_frag_txt"
+                android:drawableStart="@drawable/ic_login_one"
+                android:text="@string/login" />
+
+            <View style="@style/me_view_div"
+                android:visibility="visible"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/register_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_register_new"
+
+                    />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/register"
+                    style="@style/account_frag_txt"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/register_image"
+                    android:text="@string/register_small_letter" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/register_trail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:paddingTop="@dimen/px_19"
+                    android:paddingBottom="@dimen/px_19"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/pt_9"
+                    app:fontsName="@string/font_sans_regular"
+                    tools:text="START 7 DAYS FREE TRIAL"
+                    android:visibility="gone"
+                    />
+
+
+            </RelativeLayout>
+
+            <View style="@style/me_view_div"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                >
+
+            <ImageView
+                android:id="@+id/view_plan_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_view_plans_new" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/view_plans_without_logged_in"
+                    style="@style/account_frag_txt"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/view_plan_image"
+                    android:text="@string/view_plan" />
+            </RelativeLayout>
+
+
+            <View style="@style/me_view_div" />
+
+
+      <!-- Realted to Notification and clear watch history -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/notification_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/ic_notifications_new" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/notification_without_logged_in"
+                    style="@style/account_frag_txt"                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/notification_image"
+                    android:text="@string/title_notifications" />
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/notification_switch_not"
+                    android:layout_width="@dimen/px_52"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    app:on="true"
+                    app:textOn="On"
+                    app:textOff="Off"
+                    app:colorOn="@color/switch_color_noti"
+                    app:colorBorder="#00c4a6"
+                    android:textSize="@dimen/px_12"
+                    />
+            </RelativeLayout>
+
+
+            <View style="@style/me_view_div" />
+
+
+            <!-- Related to Language   -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/language_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+
+                    android:src="@drawable/ic_language" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/language_without_logged_in"
+                    style="@style/account_frag_txt_noarrow"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/language_image"
+                    android:text="@string/language" />
+
+                <com.github.angads25.toggle.widget.LabeledSwitch
+                    android:id="@+id/language_switch"
+                    android:layout_width="@dimen/px_52"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    app:textOn="Od"
+                    app:textOff="En"
+                    app:colorOn="@color/switch_color_noti"
+                    app:colorBorder="#00c4a6"
+                    android:textSize="@dimen/px_12"
+                    />
+            </RelativeLayout>
+
+            <View style="@style/me_view_div" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/clear_watch_history_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_clear_watch_history_new" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/clear_watch_history"
+                    style="@style/account_frag_txt_noarrow"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/clear_watch_history_image"
+                    android:text="@string/clear_watch_history" />
+            </RelativeLayout>
+
+
+            <View style="@style/me_view_div"
+                android:visibility="gone"
+                />
+
+
+
+
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/help"
+                style="@style/account_frag_txt"
+                android:drawableStart="@drawable/ic_faq"
+                android:text="@string/help" />
+
+            <View
+                style="@style/me_view_div"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/term_of_use_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_terms_of_use" />
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/terms_of_use"
+                style="@style/account_frag_txt"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/term_of_use_image"
+                android:text="@string/terms_me_text" />
+            </RelativeLayout>
+
+            <View
+                style="@style/me_view_div"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/privacy_policy_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_privacy_policy_new" />
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/privacy_policies"
+                style="@style/account_frag_txt"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/privacy_policy_image"
+                android:text="@string/privacy_me_policy" />
+            </RelativeLayout>
+
+
+            <View
+                style="@style/me_view_div"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/contact_us_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_contact_us_new" />
+
+
+
+            <com.otl.tarangplus.customeUI.GradientTextView
+                android:id="@+id/contact_us"
+                style="@style/account_frag_txt"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/contact_us_image"
+                android:text="@string/contact_me_us" />
+            </RelativeLayout>
+
+
+            <View style="@style/me_view_div" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+        <include layout="@layout/me_loggedin_fragment" />
+
+
+    </LinearLayout>
+
+
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/app_version_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/px_5"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:text="@string/app_name"
+        android:textColor="@color/txt_grey"
+        android:textSize="@dimen/pt_9"
+        app:fontName="@string/font_sans_regular" />
+
+</RelativeLayout>

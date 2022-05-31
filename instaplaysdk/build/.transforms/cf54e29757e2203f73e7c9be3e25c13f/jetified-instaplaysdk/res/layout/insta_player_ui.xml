@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d000000">
+
+    <RelativeLayout
+        android:id="@+id/playback_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/muteImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/insta_ic_mute"
+                android:tag="captionTracks"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/switchToHd"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:text="HD"
+                android:textColor="@color/insta_unselected_btn"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/changeCaptionTrackImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/insta_ic_closed_caption"
+                android:tag="captionTracks"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/changeAudioTrackImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:tag="audioTracks"
+                android:text="LN"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/changeVideoTrackImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/insta_ic_settings"
+                android:tag="videoTracks"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/fullScreenImageView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/insta_ic_enterfullscreen"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/player_controls"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="visible">
+
+            <!--*******************************************-->
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/thumbnail_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:background="#9e9e9e" />
+
+            <!--*******************************************-->
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/replayImageView"
+                android:layout_width="@dimen/player_play_pause_button_size"
+                android:layout_height="@dimen/player_play_pause_button_size"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:contentDescription="player_10sec_replay"
+                android:scaleType="fitXY"
+                android:src="@drawable/insta_ic_replay"
+                android:visibility="invisible" />
+
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/playImageView"
+                android:layout_width="@dimen/player_play_pause_button_size"
+                android:layout_height="@dimen/player_play_pause_button_size"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="player_play_content_description"
+                android:scaleType="fitXY"
+                android:src="@drawable/insta_ic_play"
+                android:visibility="visible" />
+
+
+            <ProgressBar
+                android:id="@+id/bufferingIcon"
+                android:layout_width="@dimen/player_play_pause_button_size"
+                android:layout_height="@dimen/player_play_pause_button_size"
+                android:layout_centerInParent="true"
+                android:indeterminateDrawable="@drawable/insta_ic_progress"
+                android:visibility="invisible" />
+
+            <!-- Added in version 3.4.1-->
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/rewindImageView"
+                android:layout_width="@dimen/player_play_pause_button_size"
+                android:layout_height="@dimen/player_play_pause_button_size"
+                android:layout_alignBottom="@+id/playImageView"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toStartOf="@+id/playImageView"
+                android:layout_toLeftOf="@+id/playImageView"
+                android:contentDescription="player_play_content_description"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/insta_ic_rewind"
+                android:visibility="visible" />
+
+
+            <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                android:id="@+id/forwardImageView"
+                android:layout_width="@dimen/player_play_pause_button_size"
+                android:layout_height="@dimen/player_play_pause_button_size"
+                android:layout_alignBottom="@+id/playImageView"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/playImageView"
+                android:layout_toRightOf="@+id/playImageView"
+                android:contentDescription="player_play_content_description"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/insta_ic_forward"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/playerMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="#444"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/player_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/player_bottom_bar_height"
+            android:layout_alignParentBottom="true"
+            android:baselineAligned="false"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/time_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="00:00"
+                    android:textColor="#FFBEBEBE"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- <SeekBar
+                     android:id="@+id/media_seekbar"
+                     style="?android:attr/progressBarStyleHorizontal"
+                     android:layout_width="0dp"
+                     android:layout_height="32dp"
+                     android:layout_weight="1" />-->
+
+
+                <com.saranyu.ott.instaplaysdk.InstaSeekBar
+                    android:id="@+id/media_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/time_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingStart="4dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="4dp"
+                    android:text="00:00"
+                    android:textColor="#FFBEBEBE"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.saranyu.ott.instaplaysdk.InstaplayImageView
+                    android:id="@+id/insta_live_tag"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/insta_icon_dotlive"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <!--            <FrameLayout-->
+            <!--                android:id="@+id/previewFrameLayout"-->
+            <!--                android:layout_width="160dp"-->
+            <!--                android:layout_height="90dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/imageView"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="match_parent" />-->
+
+            <!--            </FrameLayout>-->
+
+            <!--            <com.github.rubensousa.previewseekbar.PreviewSeekBar-->
+            <!--                android:id="@+id/previewSeekBar"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:max="800"-->
+            <!--                app:previewFrameLayout="@id/previewFrameLayout" />-->
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <!-- -->
+
+    <RelativeLayout
+        android:id="@+id/cast_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ImageView
+            android:id="@+id/cast_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B3000000" />
+
+        <TextView
+            android:id="@+id/cast_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cast_play"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Casting..."
+            android:textColor="@color/instaColorWhite"
+            android:textSize="16sp" />
+
+        <com.saranyu.ott.instaplaysdk.InstaplayImageView
+            android:id="@+id/cast_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:contentDescription="player_play_content_description"
+            android:src="@drawable/insta_ic_play" />
+
+    </RelativeLayout>
+
+    <!--    <com.saranyu.ott.instaplaysdk.InstaplayImageView-->
+    <!--        android:id="@+id/advisory_thumb_image"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:adjustViewBounds="true"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        tools:background="#9e9e9e" />-->
+
+</RelativeLayout>

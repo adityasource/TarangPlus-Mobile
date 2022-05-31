@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/pt_20"
+            app:fontName="@string/font_sans_semi_bold"
+            tool:text="Welcome Soumya!" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/px_97"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_26"
+            android:adjustViewBounds="true"
+            android:src="@drawable/welcome_icon_reel"
+            />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/txt_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_29"
+            android:gravity="center"
+            android:textColor="@color/txt_grey_66"
+            android:paddingStart="@dimen/px_20"
+            android:paddingEnd="@dimen/px_20"
+            tool:text="@string/msg_welcome"
+            android:textSize="@dimen/pt_14"
+            app:fontName="@string/font_sans_regular" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/subscribe_now"
+            style="@style/rounded_gradient_btn"
+            android:gravity="center"
+            android:text="@string/proceed" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/no_thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_25"
+            android:gravity="center"
+            android:padding="@dimen/px_10"
+            android:visibility="gone"
+            android:text="No Thanks"
+            android:textAllCaps="true"
+            android:textColor="@color/color_forgot_pwd"
+            android:textSize="@dimen/pt_11"
+            app:fontName="@string/font_sans_semi_bold" />
+    </LinearLayout>
+</RelativeLayout>

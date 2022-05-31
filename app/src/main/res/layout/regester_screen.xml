@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+    <!-- TODO: Logo and close icon -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_layout"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <RelativeLayout
+                android:id="@+id/relative_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--normal_toolbar_new-->
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Register"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/pt_18"
+                    app:fontName="@string/font_sans_bold" />
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/register"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/px_20"
+                    android:layout_marginTop="@dimen/px_15"
+                    android:layout_marginEnd="@dimen/pt_20"
+                    android:layout_marginBottom="@dimen/px_0"
+                    android:background="@drawable/error_txt_background"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/px_11"
+                    android:paddingBottom="@dimen/px_11"
+                    android:singleLine="true"
+                    android:textColor="@color/error_txt_red"
+                    android:textSize="@dimen/pt_11"
+                    android:visibility="gone"
+                    app:fontName="@string/font_sans_regular"
+                    tools:text="invalid credentials, Please try again." />
+            </RelativeLayout>
+
+
+            <!-- TODO : For Email and Mobile Switching-->
+
+            <RelativeLayout
+                android:id="@+id/relative_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relative_layout1"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_orange"
+                    android:gravity="center"
+                    android:padding="@dimen/px_10"
+                    android:paddingStart="@dimen/px_16"
+                    android:paddingTop="@dimen/px_8"
+                    android:paddingEnd="@dimen/px_16"
+                    android:paddingBottom="@dimen/px_8"
+                    android:text="@string/email"
+                    android:textColor="@color/otv_orange"
+                    android:textSize="@dimen/px_15"
+                    app:fontName="@string/font_sans_semi_bold" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/px_3"
+                    android:layout_marginRight="@dimen/px_3"
+                    android:layout_toRightOf="@+id/email"
+                    android:background="@color/text_gray" />
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/line"
+                    android:gravity="center"
+                    android:padding="@dimen/px_10"
+                    android:paddingStart="@dimen/px_16"
+                    android:paddingTop="@dimen/px_8"
+                    android:paddingEnd="@dimen/px_16"
+                    android:paddingBottom="@dimen/px_8"
+                    android:text="@string/mobile"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/px_15"
+                    app:fontName="@string/font_sans_semi_bold" />
+
+
+            </RelativeLayout>
+
+
+            <!-- TODO : For Email and Password-->
+
+            <RelativeLayout
+                android:id="@+id/relative_layout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/relative_layout2">
+
+                <LinearLayout
+                    android:id="@+id/relative_layout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/dummy_view"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:focusable="true"
+                        android:visibility="visible"
+                        tools:text="dummy for focus" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/name_text_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorTextAppearance="@style/error_appearance">
+
+                        <com.otl.tarangplus.customeUI.MyEditText
+                            android:id="@+id/name"
+                            style="@style/me_edit_txt"
+                            android:digits="qwertyuioplkjhgfdsazxcvbnmASDFGHJKLMNBVCXZQWERTYUIOP "
+                            android:hint="@string/name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/px_5"
+                            android:textColorHint="@color/colorPrimary" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/email_id_text_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_10"
+                        app:errorTextAppearance="@style/error_appearance">
+
+                        <com.otl.tarangplus.customeUI.MyEditText
+                            android:id="@+id/email_id"
+                            style="@style/me_edit_txt"
+                            android:digits="0123456789.qwertyuioplkjhgfdsazxcvbnmASDFGHJKLMNBVCXZQWERTYUIOP@!@#$%^*()_{}[]"
+                            android:drawableStart="@color/transparent"
+                            android:drawablePadding="@dimen/px_0"
+                            android:hint="@string/email_id"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="@dimen/px_5"
+                            app:backgroundTint="@color/txt_grey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/mobile_number_text_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_10"
+                        android:visibility="gone"
+                        app:errorTextAppearance="@style/error_appearance">
+
+                        <com.otl.tarangplus.customeUI.MyEditText
+                            android:id="@+id/mobile_number"
+                            style="@style/me_edit_txt"
+                            android:drawableStart="@color/transparent"
+                            android:drawablePadding="@dimen/px_0"
+                            android:hint="@string/mobile_number"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:paddingStart="@dimen/px_5"
+                            app:backgroundTint="@color/txt_grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/password_text_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:passwordToggleDrawable="@drawable/password_eye_selector"
+                        app:passwordToggleEnabled="true"
+                        app:passwordToggleTint="@color/passwordeyetint">
+
+                        <com.otl.tarangplus.customeUI.MyEditText
+                            android:id="@+id/password"
+                            style="@style/me_edit_txt"
+                            android:digits="0123456789.qwertyuioplkjhgfdsazxcvbnmASDFGHJKLMNBVCXZQWERTYUIOP@!@#$%^*()_{}[]"
+                            android:drawableStart="@color/transparent"
+                            android:drawablePadding="@dimen/px_0"
+                            android:hint="@string/password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:paddingStart="@dimen/px_5"
+                            app:backgroundTint="@color/txt_grey" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <!-- TODO : for terms and conditions   -->
+                <RelativeLayout
+                    android:id="@+id/relative_layout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_layout7"
+                    android:paddingLeft="@dimen/pt_30"
+                    android:paddingTop="@dimen/pt_30"
+                    android:paddingRight="@dimen/pt_30">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/color_orange" />
+
+                    <com.otl.tarangplus.customeUI.MyTextView
+                        android:id="@+id/agree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/check_box"
+                        android:text="I agree to the"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/pt_16"
+                        app:fontName="@string/font_sans_regular" />
+
+                    <com.otl.tarangplus.customeUI.MyTextView
+                        android:id="@+id/terms_of_use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_5"
+                        android:layout_marginRight="@dimen/px_5"
+                        android:layout_toRightOf="@+id/agree"
+                        android:text="TERMS OF USE"
+                        android:textColor="@color/color_orange"
+                        app:fontName="@string/font_sans_regular" />
+
+                    <com.otl.tarangplus.customeUI.MyTextView
+                        android:id="@+id/and"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/agree"
+                        android:layout_marginStart="@dimen/px_33"
+                        android:text="and"
+                        android:textColor="@color/txt_color"
+                        android:textSize="@dimen/pt_16"
+                        app:fontName="@string/font_sans_regular" />
+
+                    <com.otl.tarangplus.customeUI.MyTextView
+                        android:id="@+id/privacy_policies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/agree"
+                        android:layout_marginLeft="@dimen/px_5"
+                        android:layout_toRightOf="@+id/and"
+                        android:text="PRIVACY POLICY"
+                        android:textColor="@color/color_orange"
+                        app:fontName="@string/font_sans_regular" />
+
+
+                </RelativeLayout>
+
+
+                <!-- TODO : REGISTER Button -->
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_layout11">
+
+                    <com.otl.tarangplus.customeUI.MyTextView
+                        android:id="@+id/register_btn"
+                        style="@style/rounded_gradient_btn"
+                        android:layout_centerInParent="true"
+                        android:text="REGISTER"
+                        app:fontName="@string/font_sans_bold" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

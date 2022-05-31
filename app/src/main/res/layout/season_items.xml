@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linearlayout"
+    android:paddingRight="@dimen/px_10"
+    android:paddingLeft="@dimen/px_10"
+    android:paddingTop="@dimen/px_5"
+    android:paddingBottom="@dimen/px_5"
+    android:background="@color/splash_screen_bg"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/px_150"
+        android:layout_height="@dimen/px_85"
+        android:clipToPadding="true"
+        app:cardCornerRadius="@dimen/px_3"
+        app:cardElevation="@dimen/px_shadow_3"
+        android:background="@color/splash_screen_bg"
+        app:cardUseCompatPadding="false">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/splash_screen_bg"
+            android:src="@drawable/toolbaricon_new" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/px_10">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_5"
+            android:ellipsize="end"
+            android:fontFamily="@string/font_sans_bold"
+            android:maxLines="1"
+            android:text="lorem sorem here we goasd asd asd asd "
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/pt_14" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:ellipsize="end"
+            android:fontFamily="@string/font_sans_regular"
+            android:maxLines="3"
+            android:text="lorem sorem here we goasd asd asd asd ads asd asd asd asd asd asdasd asd asd asd asd asd asds asd asd"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/pt_12" />
+    </RelativeLayout>
+
+</LinearLayout>

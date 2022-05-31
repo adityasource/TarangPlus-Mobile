@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_controller"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#66000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/playPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@id/exo_play"
+                style="@style/ExoMediaButton.Play"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                />
+
+            <ImageButton
+                android:id="@id/exo_pause"
+                style="@style/ExoMediaButton.Pause"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:padding="4dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/play_cast"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:padding="4dp"
+            android:src="@drawable/ic_vidgyor_play_arrow" />
+
+        <ImageView
+            android:id="@+id/pause_cast"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_vidgyor_pause_arrow" />
+
+
+        <TextView
+            android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="4dp"
+            android:textColor="#FFBEBEBE"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:id="@id/exo_progress"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:ad_marker_color="@color/transparent" />
+
+        <TextView
+            android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="4dp"
+            android:textColor="#FFBEBEBE"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/live_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:text=" Live"
+            android:drawableStart="@drawable/vidgyor_red_circle"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:focusable="true" />
+
+
+        <androidx.mediarouter.app.MediaRouteButton
+            android:id="@+id/exo_cast_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:mediaRouteTypes="user"
+            android:padding="4dp"
+            android:theme="@style/Theme.AppCompat.Light"
+            android:visibility="visible"
+            app:mediaRouteButtonTint="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/video_player_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_vidgyor_video_mode"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/audio_player_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_vidgyor_audio_only"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/stream_quality_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_vidgyor_settings"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/exo_fullscreen_frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/exo_fullscreen_icon"
+                android:layout_width="40dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_vidgyor_fullscreen" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

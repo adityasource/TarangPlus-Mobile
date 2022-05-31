@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/px_10"
+    android:gravity="center_vertical"
+    android:id="@+id/item"
+    android:weightSum="5">
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/listname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="list name"
+        android:textColor="@color/txt_color"
+        android:singleLine="true"
+        android:textSize="@dimen/pt_16"
+        android:layout_weight="4"
+    />
+
+    <ImageView
+        android:id="@+id/deleteplaylist"
+        android:layout_width="@dimen/px_25"
+        android:layout_height="@dimen/px_25"
+        android:padding="@dimen/px_5"
+        android:layout_weight="1"
+        android:src="@drawable/ic_delete" />
+
+
+</LinearLayout>

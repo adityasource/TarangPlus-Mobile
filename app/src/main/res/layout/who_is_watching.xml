@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/members_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_margin="@dimen/px_32"
+        android:visibility="gone"
+        tool:visibility="visible">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/text_who_is_watching"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/who_is_watching_txt" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/who_is_watching_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/proceed"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/members_container"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="@dimen/px_20" />
+
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/proceed"
+        style="@style/rounded_gradient_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/px_40"
+        android:text="@string/proceed"
+        android:visibility="gone"
+        tool:visibility="visible" />
+
+</RelativeLayout>

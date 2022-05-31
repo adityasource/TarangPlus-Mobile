@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg"
+    android:clickable="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/no_int_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/no_internet_image"
+            android:layout_width="@dimen/px_123"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/error_no_internet"
+             />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            style="@style/error_title_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/some_thing_went_wrong" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            style="@style/error_des_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/please_check_internt" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/try_again_btn"
+            style="@style/error_button_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/try_again" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

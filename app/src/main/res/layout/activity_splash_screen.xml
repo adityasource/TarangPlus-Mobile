@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg"
+    tools:context=".SplashScreenActivity"
+    >
+    <VideoView
+        android:id="@+id/video_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" />
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/popup_negetive_button"
+        style="@style/rounded_gradient_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_0"
+        android:layout_marginBottom="@dimen/px_50"
+        android:text="Retry"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        tools:text="Retry" />
+
+    <RelativeLayout
+        android:id="@+id/no_region_ui"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/splash_screen_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/px_113"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/no_region_icon"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/no_region_icon"
+            android:layout_width="@dimen/px_123"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/px_91"
+            android:adjustViewBounds="true"
+            android:src="@drawable/error_no_data"
+            />
+
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/no_region_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_30"
+            android:gravity="center"
+            android:text="@string/region_not_supported"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pt_20"
+            app:fontName="@string/font_sans_semi_bold" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

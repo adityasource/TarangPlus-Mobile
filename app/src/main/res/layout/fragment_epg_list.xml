@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/display_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_next_black"
+        android:paddingStart="@dimen/px_15"
+        android:paddingTop="@dimen/px_10"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/px_15"
+        android:paddingBottom="@dimen/px_10"
+        android:textSize="@dimen/pt_20"
+        app:fontsName="@string/font_sans_semi_bold"
+        tools:text="Bollywood Music" />
+
+    <LinearLayout
+        android:id="@+id/lyt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_title"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/px_16"
+        android:layout_marginTop="@dimen/px_10">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/px_135"
+            android:layout_height="@dimen/px_135"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder_1x1" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display_title"
+        android:layout_marginStart="@dimen/px_5"
+        android:layout_marginTop="@dimen/px_10"
+        android:layout_toEndOf="@+id/lyt"
+        android:background="@color/white"
+        android:overScrollMode="never" />
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/parent_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/name_image_text_bold"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_60"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_btn_corner_filled_for_white"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:textAllCaps="true"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/pt_24"
+            android:visibility="gone"
+            app:fontName="@string/font_sans_black"
+            tools:text="AP"
+            tools:visibility="visible" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/name_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_image_text_bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/px_9"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLength="13"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/pt_11"
+            android:visibility="gone"
+            app:fontName="@string/font_sans_extra_bold"
+            tools:text="vallabh potadar"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

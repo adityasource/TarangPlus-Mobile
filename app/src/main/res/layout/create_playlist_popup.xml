@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/px_8"
+    android:paddingStart="@dimen/px_20"
+    android:paddingTop="@dimen/px_20"
+    android:paddingEnd="@dimen/px_20"
+    android:paddingBottom="@dimen/px_10">
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a name to Playlist"
+        android:textColor="@color/black"
+        android:textSize="@dimen/pt_16"
+        android:visibility="visible"
+        app:fontName="@string/font_sans_semi_bold"
+        tools:visibility="@string/warning_title" />
+
+    <com.otl.tarangplus.customeUI.MyEditText
+        android:id="@+id/playlistname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/px_15"
+        android:hint="Add a name to Playlist"
+        android:textColor="@color/txt_grey_66"
+        android:textSize="@dimen/pt_12"
+        app:fontName="@string/font_sans_regular" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/playlistname"
+        android:layout_marginTop="@dimen/px_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/cancel"
+            style="@style/rounded_grey_btn"
+            android:layout_margin="@dimen/px_8"
+            android:text="Cancel" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/confirm"
+            style="@style/rounded_gradient_btn"
+            android:layout_margin="@dimen/px_8"
+            android:text="Create" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512.000000dp"
+    android:height="512.000000dp"
+    android:viewportWidth="512.000000"
+    android:viewportHeight="512.000000">
+
+    <group
+            android:translateY="512.000000"
+            android:scaleX="0.100000"
+            android:scaleY="-0.100000">
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M0 4350 l0 -770 255 0 255 0 0 332 0 333 678 -678 677 -677 183 182 182 183 -677
+677 -678 678 333 0 332 0 0 255 0 255 -770 0 -770 0 0 -770z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M3580 4865 l0 -255 332 0 333 0 -678 -678 -677 -677 182 -183 183 -182 677 677 678
+678 0 -333 0 -332 255 0 255 0 0 770 0 770 -770 0 -770 0 0 -255z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M1187 1552 l-677 -677 0 333 0 332 -255 0 -255 0 0 -770 0 -770 770 0 770 0 0 255
+0 255 -332 0 -333 0 678 678 677 677 -183 183 -182 182 -678 -678z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:strokeWidth="1"
+            android:pathData="M3072 2048 l-182 -183 677 -677 678 -678 -333 0 -332 0 0 -255 0 -255 770 0 770 0
+0 770 0 770 -255 0 -255 0 0 -332 0 -333 -678 678 -677 677 -183 -182z" />
+    </group>
+</vector>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/px_40"
+        android:layout_marginTop="@dimen/px_28"
+        android:layout_marginEnd="@dimen/px_40"
+        android:gravity="center"
+        android:text="@string/message"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/pt_11"
+        android:visibility="gone"
+        app:fontsName="@string/font_sans_semi_bold"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/four_digit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/px_45"
+        android:layout_marginTop="@dimen/px_45"
+        android:layout_marginEnd="@dimen/px_45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.poovam.pinedittextfield.LinePinField
+            android:id="@+id/otp_text_input"
+            style="@style/otp_input_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            app:bottomTextPaddingDp="8dp"
+            app:fieldColor="@color/txt_grey"
+            android:textSize="@dimen/pt_18"
+            app:distanceInBetween="@dimen/px_24"
+            android:textColor="@color/txt_grey_66"
+            app:highlightEnabled="false"
+            app:highlightColor="@color/txt_grey"
+            app:isCursorEnabled="true"/>
+    </LinearLayout>
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/continue_to_parent"
+        style="@style/rounded_gradient_btn"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/continue_me"
+        android:textColor="@color/gradient_1" />
+
+    <com.otl.tarangplus.customeUI.GradientTextView
+        android:id="@+id/forgot_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_28"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/pin_forgot"
+        android:textColor="@color/color_forgot_pwd"
+        android:textSize="@dimen/pt_11"
+        android:visibility="gone"
+        app:fontsName="@string/font_sans_semi_bold"
+        app:textAllCaps="true" />
+</LinearLayout>

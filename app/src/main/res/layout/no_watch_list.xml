@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_watchlist_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:padding="20dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/no_int_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/no_internet_image"
+            android:layout_width="@dimen/px_123"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/watch_later_empty"
+            />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            style="@style/error_title_txt"
+            android:text="@string/watch_when_you_want"
+            android:textColor="@color/txt_color"
+            />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/watch_descr_text"
+            style="@style/error_des_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/no_watchlater_txt" />
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/fav_descr_text"
+            style="@style/error_des_txt"
+            android:textColor="@color/txt_color"
+            android:visibility="gone"
+            android:text="@string/no_favourite_txt" />
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/playlist_text"
+            style="@style/error_des_txt"
+            android:textColor="@color/txt_color"
+            android:visibility="gone"
+            android:text="@string/no_playlist_txt" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/browse_shemaroo"
+            style="@style/error_button_txt"
+            android:text="@string/browse_shemaro" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

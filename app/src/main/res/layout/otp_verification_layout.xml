@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/text_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_20"
+        android:text="@string/otp_screen_txt"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/pt_12"
+        app:fontName="@string/font_sans_regular" />
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_otp"
+        android:layout_marginStart="@dimen/px_20"
+        android:layout_marginTop="@dimen/px_15"
+        android:layout_marginEnd="@dimen/pt_20"
+        android:layout_marginBottom="@dimen/px_0"
+        android:background="@drawable/error_txt_background"
+        android:gravity="center"
+        android:paddingTop="@dimen/px_11"
+        android:paddingBottom="@dimen/px_11"
+        android:singleLine="true"
+        android:textColor="@color/error_txt_red"
+        android:textSize="@dimen/pt_11"
+        android:visibility="gone"
+        app:fontName="@string/font_sans_regular"
+        tools:text="invalid credentials, Please try again."
+        tools:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/four_digit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/error_message"
+        android:layout_marginStart="@dimen/px_45"
+        android:layout_marginTop="@dimen/px_45"
+        android:layout_marginEnd="@dimen/px_45"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.poovam.pinedittextfield.LinePinField
+            android:id="@+id/otp_text_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            app:bottomTextPaddingDp="8dp"
+            app:fieldColor="@color/txt_grey"
+            android:textSize="@dimen/pt_18"
+            app:distanceInBetween="@dimen/px_24"
+            android:textColor="@color/txt_grey_66"
+            app:highlightEnabled="false"
+            app:highlightColor="@color/txt_grey"
+            app:isCursorEnabled="true"/>
+    </LinearLayout>
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/four_digit_container"
+        android:layout_marginTop="@dimen/px_11"
+        android:gravity="center"
+        android:text="OO:OO"
+        android:textColor="@color/txt_grey_66"
+        android:textSize="@dimen/pt_9"
+        android:visibility="visible"
+        app:fontName="@string/font_sans_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_29">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/text_did_recieve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/did_not_recieve"
+            android:textColor="@color/txt_grey_66"
+            android:textSize="@dimen/pt_12"
+            app:fontName="@string/font_sans_regular" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/resend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_did_recieve"
+            android:layout_marginTop="@dimen/px_14"
+            android:gravity="center"
+            android:text="@string/resend"
+            android:textColor="@color/color_forgot_pwd"
+            android:textSize="@dimen/pt_11"
+            android:visibility="visible"
+            app:fontName="@string/font_sans_semi_bold" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/verify"
+            style="@style/rounded_gradient_btn"
+            android:layout_below="@id/resend"
+            android:layout_centerHorizontal="true"
+            android:text="@string/verify" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

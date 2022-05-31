@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_screen_bg"
+    android:clickable="true"
+    android:paddingStart="@dimen/px_16"
+    android:paddingEnd="@dimen/px_16">
+
+    <RelativeLayout
+        android:id="@+id/search_edit_text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40">
+
+        <com.otl.tarangplus.customeUI.MyEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_layout_bag"
+            android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="@dimen/px_12"
+            android:paddingTop="@dimen/px_12"
+            android:paddingBottom="@dimen/px_12"
+            android:paddingRight="@dimen/px_40"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/text_gray"
+            android:textSize="@dimen/pt_12"
+            app:fontName="@string/font_sans_regular" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/px_7"
+            android:padding="@dimen/px_5"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/voice_search"
+            android:tint="@color/txt_color"
+            android:src="@drawable/ic_search_grey"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/voice_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/px_7"
+            android:padding="@dimen/px_5"
+            android:tint="@color/txt_color"
+            android:src="@drawable/ic__mic" />
+    </RelativeLayout>
+
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/search_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_edit_text_container"
+        android:layout_marginTop="@dimen/px_30"
+        android:layout_marginBottom="@dimen/px_10"
+        android:textSize="@dimen/pt_14"
+        app:fontName="@string/font_sans_medium"
+        android:textColor="@color/txt_color"
+        tools:text="Search Result (0)" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_count"
+        android:overScrollMode="never"
+        android:visibility="gone" />
+
+    <!--   <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/search_count"
+           android:orientation="vertical"
+           android:weightSum="1">-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/TrendingRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_count"
+        android:overScrollMode="never" />
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/search_history_container"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_weight="1"-->
+    <!--android:visibility="gone"-->
+    <!--tools:visibility="gone">-->
+
+    <!--<com.otl.tarangplus.customeUI.MyTextView-->
+    <!--android:id="@+id/recent_search"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/recent_search"-->
+    <!--android:textSize="@dimen/pt_14"-->
+    <!--app:fontName="@string/font_sans_medium"-->
+    <!--android:textColor="@color/txt_color"-->
+    <!--/>-->
+
+    <!--<com.otl.tarangplus.customeUI.MyTextView-->
+    <!--android:id="@+id/clear"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:text="@string/clear"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/color_forgot_pwd"-->
+    <!--android:textSize="@dimen/pt_11"-->
+    <!--app:fontName="@string/font_sans_semi_bold" />-->
+
+    <!--<ListView-->
+    <!--android:id="@+id/list_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/recent_search"-->
+    <!--android:overScrollMode="never"-->
+    <!--android:scrollbars="none" />-->
+    <!--</RelativeLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <include
+        layout="@layout/no_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_edit_text_container"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

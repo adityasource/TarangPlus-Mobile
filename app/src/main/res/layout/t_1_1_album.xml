@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px_8"
+    app:cardCornerRadius="@dimen/px_3"
+    app:cardElevation="@dimen/px_shadow_3">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/px_125"
+        android:layout_height="@dimen/px_125"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_des"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/place_holder_1x1" />
+
+
+    <ImageView
+        android:id="@+id/premium"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_tag_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_des"
+        android:visibility="gone"
+        app:srcCompat="@drawable/premium_rec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/live_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_tag_height"
+        android:layout_gravity="end"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:contentDescription="@string/content_des"
+        app:srcCompat="@drawable/live_tag_right" />
+
+</androidx.cardview.widget.CardView>

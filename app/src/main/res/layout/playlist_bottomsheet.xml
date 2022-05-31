@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/px_7">
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/playlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Playlist:"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/pt_14" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/add_to_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="Create list + "
+            android:textColor="@color/otv_orange"
+            android:textSize="@dimen/pt_14"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rel_lay"
+        android:background="@color/colorAccent" />
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1">
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="176dp"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:text="Create new list by clicking 'Create List +'" />
+
+        <com.otl.tarangplus.customeUI.MyRecyclerView
+            android:id="@+id/playlist_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/px_5"
+            app:maxHeightDp="180" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/rel"
+        android:background="@color/colorAccent" />
+
+    <com.otl.tarangplus.customeUI.MyTextView
+        android:id="@+id/playlist_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/px_5"
+        android:padding="@dimen/px_5"
+        android:text="Done"
+        android:textColor="@color/otv_orange"
+        android:textSize="@dimen/px_15"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

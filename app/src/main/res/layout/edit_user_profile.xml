@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/app_bar_layout"
+        layout="@layout/normal_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_0">
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/name_image_text"
+                android:layout_width="@dimen/px_80"
+                android:layout_height="@dimen/px_80"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_67"
+                android:background="@drawable/new_user_icon"
+                android:gravity="center"
+                android:maxLength="2"
+                android:scaleType="centerCrop"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/pt_24"
+                app:fontName="@string/font_sans_extra_bold" />
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/change_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_image_text"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:text="@string/change_picture"
+                android:textAllCaps="true"
+                android:textColor="@color/color_forgot_pwd"
+                android:textSize="@dimen/pt_11"
+                android:visibility="gone"
+                app:fontName="@string/font_sans_semi_bold"
+                tools:visibility="visible" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile_number_text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/change_picture"
+                android:layout_marginStart="@dimen/px_40"
+                android:textColor="@color/txt_grey_66"
+                android:layout_marginTop="@dimen/px_37"
+                android:textColorHint="@color/txt_grey_66"
+                android:layout_marginEnd="@dimen/px_40"
+                android:hint="@string/profile_name">
+
+                <com.otl.tarangplus.customeUI.MyEditText
+                    android:id="@+id/profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/edit_txt_bottom_line"
+                    android:gravity="bottom"
+                    android:imeOptions="actionDone"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/txt_grey_66"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/px_15"
+                    android:singleLine="true"
+                    android:textSize="@dimen/pt_16"
+                    app:fontName="@string/font_sans_regular" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/mobile_number_text_input"
+                android:layout_marginStart="@dimen/px_40"
+                android:layout_marginTop="@dimen/px_5"
+                android:layout_marginEnd="@dimen/px_40"
+                android:background="@color/error_txt_back_color"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/kids_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="@dimen/px_40"
+                android:layout_marginTop="@dimen/px_40"
+                android:layout_marginEnd="@dimen/px_40"
+                android:layout_marginBottom="@dimen/px_15"
+                android:paddingTop="@dimen/px_5">
+
+                <com.otl.tarangplus.customeUI.MyTextView
+                    android:id="@+id/kids_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:hint="@string/kids"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/pt_16"
+                    app:fontName="@string/font_sans_regular" />
+
+                <Switch
+                    android:id="@+id/kid_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/px_2"
+                    android:theme="@style/switch_color" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kids_container">
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/save"
+                    style="@style/rounded_gradient_btn"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/save"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <com.otl.tarangplus.customeUI.GradientTextView
+                    android:id="@+id/add"
+                    style="@style/rounded_gradient_btn"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/add"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </RelativeLayout>
+
+            <com.otl.tarangplus.customeUI.MyTextView
+                android:id="@+id/delete_this_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/px_25"
+                android:gravity="center"
+                android:padding="@dimen/px_5"
+                android:text="@string/delete_profile"
+                android:textAllCaps="true"
+                android:textColor="@color/color_forgot_pwd"
+                android:textSize="@dimen/pt_11"
+                app:fontName="@string/font_sans_semi_bold" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_below="@id/delete_this_profile"
+                android:layout_height="@dimen/px_350" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

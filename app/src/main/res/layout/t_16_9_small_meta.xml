@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/px_8"
+    app:cardCornerRadius="@dimen/px_3"
+    app:cardElevation="@dimen/px_shadow_3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/splash_screen_bg"
+        >
+
+        <RelativeLayout
+            android:id="@+id/lyt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/px_140"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_des"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/place_holder_16x9" />
+
+
+            <ImageView
+                android:id="@+id/play_icon"
+                android:layout_width="@dimen/px_24"
+                android:layout_height="@dimen/px_24"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/content_des"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_play_circle"
+                tools:tint="@color/txt_grey" />
+
+        </RelativeLayout>
+
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            android:id="@+id/titleText"
+            android:layout_width="@dimen/px_140"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/px_11"
+            android:paddingTop="@dimen/px_9"
+            android:paddingEnd="@dimen/px_11"
+            android:paddingBottom="@dimen/px_11"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/pt_12"
+            app:fontName="@string/font_sans_semi_bold"
+            tools:text="@string/lorem" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/premium"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_tag_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_des"
+        android:visibility="gone"
+        app:srcCompat="@drawable/premium_rec"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/live_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_tag_height"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_des"
+        app:srcCompat="@drawable/live_tag_right" />
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/error_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:padding="20dp"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/no_int_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/no_internet_image"
+            android:layout_width="@dimen/px_123"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/error_no_data"
+             />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            style="@style/error_title_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/sorry_txt" />
+
+        <com.otl.tarangplus.customeUI.MyTextView
+            style="@style/error_des_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/no_data_found_txt" />
+
+        <com.otl.tarangplus.customeUI.GradientTextView
+            android:id="@+id/error_go_back"
+            style="@style/error_button_txt"
+            android:textColor="@color/txt_color"
+            android:text="@string/go_back_txt" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

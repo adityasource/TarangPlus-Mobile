@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/splash_screen_bg"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    app:elevation="3dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/px_0"
+        android:paddingEnd="@dimen/px_0"
+        android:theme="@android:style/Theme.NoTitleBar"
+        app:contentInsetEnd="@dimen/px_0"
+        app:contentInsetLeft="@dimen/px_0"
+        app:contentInsetRight="@dimen/px_0"
+        app:contentInsetStart="@dimen/px_0">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/px_2">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="@dimen/px_36"
+                android:layout_height="@dimen/px_36"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/px_10"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/px_10"
+                android:src="@drawable/ic_close_new"
+                android:tint="@color/txt_color"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/px_36"
+                android:layout_marginEnd="@dimen/px_36"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+
+
+                />
+
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+</com.google.android.material.appbar.AppBarLayout>

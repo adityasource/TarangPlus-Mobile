@@ -1,0 +1,239 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+        google()
+    }
+
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.4, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.gms.google-services'
+
+
+
+android {
+
+    signingConfigs {
+        release {
+            keyAlias = 'tarangtv'
+            keyPassword 'tarangtv@odisha'
+            storeFile file('C:\\D_Drive\\TemplateApps\\OTV\\tarangtv.jks')
+            storePassword 'tarangtv@odisha'
+
+        }
+    }
+
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.otl.tarangplus"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 46
+        versionName "5.1.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true // add this to enable multi-dex
+        manifestPlaceholders = [clevertapAccountId : "",
+                                clevertapToken     : "",
+                                googleAdsKey       : "ca-app-pub-1011955008088827~5947291329",
+                                onesignal_app_id   : 'b18f8150-faeb-425d-90d2-25719569d2b7',
+                                youtubeDeveloperKey: "AIzaSyDWuMjLUr3juGELVAKT5lGRcT4WOYllCUI",
+                                chrome_id          : "C859C6B6",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: 'REMOTE']
+
+
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            manifestPlaceholders = [crashlyticsApiKey: "3a4a8f6edf1715a5cb85dc20f5098b1b8cc1b4f3"]
+            buildConfigField 'Boolean', 'enableCrashlytics', 'false'
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsApiKey: "3a4a8f6edf1715a5cb85dc20f5098b1b8cc1b4f3"]
+            buildConfigField 'Boolean', 'enableCrashlytics', 'false'
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    flavorDimensions "Full"
+    productFlavors {
+        staging {
+            dimension "Full"
+        }
+        preprod {
+            dimension "Full"
+        }
+        production {
+            dimension "Full"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        println "****************************"
+        println "variant: ${variant.name}"
+        println "flavor: ${variant.flavorName}"
+        println "****************************"
+
+        if (variant.flavorName == 'staging') {
+            buildConfigField "String", "ADS_URL", '"http://13.235.165.21:3005"'
+            buildConfigField "String", "BASE_URL", '"http://15.207.203.156/"'
+            buildConfigField "String", "ANALYTICS_URL", '"https://vidura.tarangplus.in/matomo.php"'
+            buildConfigField "int", "ANALYTICS_SITE_ID", '6'
+            buildConfigField "String", "COMSCORESECRET", '"cb1c9d585c775d2c00368eab935c3612"'
+            buildConfigField "String", "PUBLISHEID", '"29893594"'
+            buildConfigField "String", "GOOGLEADID", '"/6499/example/interstitial"'
+            buildConfigField "String", "PLAYSTORE_URL", '"https://play.google.com/store/apps/details?id=com.otl.tarangplus"'
+        } else if (variant.flavorName == 'preprod') {
+            buildConfigField "String", "ADS_URL", '"http://otvtranscoding-prod-cmsott-alb-790025166.ap-south-1.elb.amazonaws.com"'
+            buildConfigField "String", "BASE_URL", '"http://otvtranscoding-prod-cmsott-alb-790025166.ap-south-1.elb.amazonaws.com/"'
+            buildConfigField "String", "ANALYTICS_URL", '"https://vidura.tarangplus.in/matomo.php"'
+            buildConfigField "int", "ANALYTICS_SITE_ID", '3'
+            buildConfigField "String", "COMSCORESECRET", '"cb1c9d585c775d2c00368eab935c3612"'
+            buildConfigField "String", "PUBLISHEID", '"29893594"'
+            buildConfigField "String", "GOOGLEADID", '"/370089190/TarangPlus_Interstitial"'
+            buildConfigField "String", "PLAYSTORE_URL", '"https://play.google.com/store/apps/details?id=com.otl.tarangplus"'
+        } else if (variant.flavorName == 'production') {
+            buildConfigField "String", "ADS_URL", '"https://prod.api.tarangplus.in"'
+            buildConfigField "String", "BASE_URL", '"https://prod.api.tarangplus.in/"'
+            buildConfigField "String", "ANALYTICS_URL", '"https://vidura.tarangplus.in/matomo.php"'
+            buildConfigField "int", "ANALYTICS_SITE_ID", '3'
+            buildConfigField "String", "COMSCORESECRET", '"cb1c9d585c775d2c00368eab935c3612"'
+            buildConfigField "String", "PUBLISHEID", '"29893594"'
+            buildConfigField "String", "GOOGLEADID", '"/370089190/TarangPlus_Interstitial"'
+            buildConfigField "String", "PLAYSTORE_URL", '"https://play.google.com/store/apps/details?id=com.otl.tarangplus"'
+        }
+
+        variant.outputs.all {
+            def formattedDate = new Date().format('ddMMyyyy')
+            def pointedTo = variant.flavorName.substring(0, 3)
+            def buildVariant = variant.buildType.name.substring(0, 3)
+            outputFileName = "tarang_${pointedTo}_${buildVariant}_${versionName}_${formattedDate}.apk"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar,*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.2.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+
+    testImplementation 'junit:junit:4.12'
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.1'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+
+/*    implementation 'com.google.firebase:firebase-messaging:20.2.0'
+    implementation 'com.google.firebase:firebase-config:19.1.4'
+    // Recommended: Add the Firebase SDK for Google Analytics.
+    implementation 'com.google.firebase:firebase-analytics:17.4.2'
+    // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.0'*/
+    implementation platform('com.google.firebase:firebase-bom:27.1.0')
+    implementation 'com.google.firebase:firebase-inappmessaging-display'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    implementation 'androidx.room:room-runtime:2.0.0'
+    annotationProcessor 'androidx.room:room-compiler:2.0.0'
+
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+
+    implementation "com.android.installreferrer:installreferrer:2.2"
+
+
+    implementation 'org.matomo.sdk:tracker:4.0.0'
+    implementation project(':comScore-Android-all-normal-5.7.3.190611')
+        //chrome cast
+    implementation 'com.google.android.gms:play-services-cast-framework:20.0.0'
+
+    implementation 'com.poovam:pin-edittext-field:1.2.3'
+    implementation 'com.github.angads25:toggle:1.1.0'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.asksira.android:loopingviewpager:1.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //todo
+    implementation 'com.google.ads.interactivemedia.v3:interactivemedia:3.11.3'
+    //end
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+    implementation 'com.google.android.gms:play-services-ads:17.2.1'
+
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+    implementation 'com.onesignal:OneSignal:[3.13.0, 3.99.99]'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    //implementation 'com.facebook.android:facebook-login:[5,6)'
+    implementation 'com.facebook.android:facebook-login:[8,9)'
+
+
+    implementation project(':InMobiSDK')
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation project(':instaplaysdk')
+    implementation  files('libs/vidgyor16052021.aar')
+
+    //lib for ExoPlayer
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.8'
+    implementation 'com.google.android.exoplayer:extension-ima:2.11.8'
+    implementation 'com.google.android.exoplayer:extension-cast:2.11.8'
+    implementation 'com.google.android.exoplayer:extension-okhttp:2.11.8'
+    implementation 'com.google.android.exoplayer:extension-mediasession:2.11.8'
+
+    implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
+    implementation 'com.google.ads.mediation:facebook:5.8.0.0'
+
+    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.volley:volley:1.2.0'
+
+    //for images or gif
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.webengage:android-sdk:3.18.4'
+    implementation 'com.google.android.gms:play-services-ads:20.2.0'
+}
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://jitpack.io' }
+}

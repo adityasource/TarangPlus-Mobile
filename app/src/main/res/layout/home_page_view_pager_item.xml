@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.asksira.loopingviewpager.LoopingViewPager
+        android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:autoScroll="true"
+        app:isInfinite="true"
+        app:scrollInterval="5000"
+        app:wrap_content="true"
+        android:layout_marginTop="10dp"/>
+<!--  android:id="@+id/myviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        app:autoScroll="true"
+        app:isInfinite="true"
+        app:scrollInterval="5000"
+        app:wrap_content="true" -->
+    <com.rd.PageIndicatorView
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:piv_animationType="scale"
+        android:paddingBottom="@dimen/px_12"
+        app:piv_animationDuration="100"
+        app:piv_interactiveAnimation="true"
+        app:piv_unselectedColor="@color/see_all_button"
+        app:piv_selectedColor="@color/unselected_dots"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/px_10"
+        app:piv_radius="@dimen/px_5"
+        />
+</LinearLayout>
